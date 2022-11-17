@@ -1,4 +1,16 @@
-h1 {
-    color: green;
-    font-size: 64px;
-}
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/typography";
+@import "base/base";
+@import "base/animations";
+
+
+
+
+
+@import "pages/home";
+
+@import "layout/header";
+@import "layout/footer";
+
+
