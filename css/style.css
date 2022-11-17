@@ -27,10 +27,77 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  display: flex; }
 
 ul {
   list-style: none; }
 
 a {
   text-decoration: none; }
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+
+.button-round, .button-round:link, .button-round:visited {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1.5px solid #3A3C45;
+  transition: all 250ms ease; }
+  .button-round svg, .button-round:link svg, .button-round:visited svg {
+    fill: #8B929A;
+    width: 2.4rem;
+    height: 2.4rem; }
+  .button-round:hover, .button-round:active, .button-round:link:hover, .button-round:link:active, .button-round:visited:hover, .button-round:visited:active {
+    background-color: #38F094;
+    color: #12141D; }
+    .button-round:hover svg, .button-round:active svg, .button-round:link:hover svg, .button-round:link:active svg, .button-round:visited:hover svg, .button-round:visited:active svg {
+      fill: currentColor; }
+  .button-round:hover, .button-round:link:hover, .button-round:visited:hover {
+    transform: translateY(-3px) scale(1.05); }
+  .button-round:active, .button-round:link:active, .button-round:visited:active {
+    transform: translateY(-1px); }
+
+.sidebar {
+  min-height: 100vh;
+  background-color: #12141D;
+  padding: 3.2rem 2rem 2.4rem;
+  display: flex;
+  flex-direction: column; }
+  .sidebar__button-home {
+    text-transform: uppercase;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.3;
+    color: #38F094;
+    -webkit-text-stroke: 1px #3A3C45; }
+  .sidebar__navigation {
+    flex-grow: 1;
+    padding-top: 2.4rem;
+    border-top: 1px solid #3A3C45;
+    margin-top: 2.4rem; }
+    .sidebar__navigation-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem; }
+  .sidebar__menu-item:not(:first-child) {
+    margin-top: 2.4rem; }
+  .sidebar__menu-item:last-child {
+    margin-top: 4.8rem;
+    position: relative; }
+    .sidebar__menu-item:last-child::before {
+      content: '';
+      height: 1px;
+      width: 100%;
+      background-color: #3A3C45;
+      position: absolute;
+      top: -2.4rem;
+      left: 0; }

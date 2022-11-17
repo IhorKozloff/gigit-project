@@ -15,10 +15,16 @@ html {
 body {
     font-family: $primary-font;
     font-weight: 400;
+    display: flex;
 }
 ul {
     list-style: none;
 }
 a {
     text-decoration: none;
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }

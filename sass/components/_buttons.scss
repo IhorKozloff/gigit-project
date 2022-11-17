@@ -1,0 +1,41 @@
+.button-round {
+    &,
+    &:link,
+    &:visited {
+        width: 4rem;
+        height: 4rem;
+        @include flex-center;
+        border-radius: 50%;
+        border: 1.5px solid $color-grey-dark;
+        transition: all 250ms ease;
+   
+
+        & svg {
+            fill: $color-grey-2;
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $color-green-light;
+            color: $color-black;
+            
+            & svg {
+                fill: currentColor;
+            }
+        }
+        &:hover {
+            transform: translateY(-3px) scale(1.05);
+
+        }
+        &:active {
+            transform: translateY(-1px);
+        }
+        
+
+    }
+    
+    
+}
+
