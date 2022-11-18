@@ -9,81 +9,629 @@
     <title>Gigit | on your own</title>
 </head>
 <body>
-    <aside class="sidebar">
+    <div class="layout-container">
+        <aside class="sidebar">
 
-        <a href="index.html" class="sidebar__button-home button-round">g</a>
+            <a href="#" class="sidebar__button-home button-round">g</a>
+    
+    
+            <nav class="sidebar__navigation">
+    
+                
+    
+                <ul class="sidebar__navigation-list">
+                    
+                    <li class="sidebar__navigation-item">
+                        <a href="#" class="sidebar__link button-round">
+                            <svg class="sidebar__navigation-icon">
+                                <use href="img/sprite.svg#icon-Calendar"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="#" class="sidebar__link sidebar__link--active button-round">
+                            <svg class="sidebar__navigation-icon">
+                                <use href="img/sprite.svg#icon-Music"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="#" class="sidebar__link button-round">
+                            <svg class="sidebar__navigation-icon">
+                                <use href="img/sprite.svg#icon-Favorites-Default"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="#" class="sidebar__link button-round">
+                            <svg class="sidebar__navigation-icon">
+                                <use href="img/sprite.svg#icon-Messages"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="#" class="sidebar__link button-round">
+                            <svg class="sidebar__navigation-icon">
+                                <use href="img/sprite.svg#icon-File-Invoice"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+    
+            <menu class="sidebar__menu">
+                <ul class="sidebar__menu-list">
+                    <li class="sidebar__menu-item">
+                        <button type="button" class="sidebar__link button-round">
+                            <svg class="sidebar__menu-icon">
+                                <use href="img/sprite.svg#icon-Bell"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <button type="button" class="sidebar__link button-round">
+                            <svg class="sidebar__menu-icon">
+                                <use href="img/sprite.svg#icon-User"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <button type="button" class="sidebar__link button-round">
+                            <svg class="sidebar__menu-icon">
+                                <use href="img/sprite.svg#icon-Arrow-Bar-Right"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </menu>
+        </aside>
+    
+        
+    
+        <div class="content-container">
+            <header class="header">
+           
+                <h1 class="heading-1">Browse</h1>
+
+                <form action="#" class="header__form">
+                    <ul class="header__form-list">
+                        <li class="header__form-item">
+                            <input type="text" class="header__input" placeholder="Search">
+                            <svg class="header__form-icon">
+                                <use href="img/sprite.svg#icon-Search"></use>
+                            </svg>
+                        </li>
+                        <li class="header__form-item">
+                            <input type="text" class="header__input" placeholder="View Filters">
+                            <svg class="header__form-icon">
+                                <use href="img/sprite.svg#icon-Filters"></use>
+                            </svg>
+                        </li>
+                        
+                    </ul>
+                    
+                    
+                </form>
+          
+            </header>
+
+            <main>
 
 
-        <nav class="sidebar__navigation">
+                <section class="section-title">
+                    
+                    <div class="section-title__text-wrapper">
+                        <h2 class="heading-2">
+                            More than 100+ musical groups<br> are ready to perform in your venue
+                        </h2>
+                        <p class="section-title__description">
+                            Use trial access to evaluate the benefits of our service
+                        </p>
+                    </div>
+                 
+                </section>
 
+
+                <section class="section-new-artists margin-bottom-largest">
+                   
+                        <h2 class="heading-2 margin-bottom-medium">New artists</h2>
+
+                         <ul class="artists-list">
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo margin-bottom-small">
+                                        <img 
+                                            src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-1-x2-min.jpg" 
+                                            alt="artist logo 1" 
+                                            class="artists-list__logo-img"
+                                        />
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Linkin Park</span>
+                                        <span class="artists-list__genre">Alternative</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo margin-bottom-small">
+                                        <img 
+                                            src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-2-x2-min.jpg"
+                                            alt="artist logo 2" 
+                                            class="artists-list__logo-img"
+                                        >
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Nirvana</span>
+                                        <span class="artists-list__genre">Grunge</span>
+                                    </div>
+                                </a>
+                                
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo margin-bottom-small">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-3-x2-min.png" alt="artist logo 3" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Limp Bizkit</span>
+                                        <span class="artists-list__genre">Nu metal</span>
+                                    </div>
+                                </a>
+                               
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo margin-bottom-small">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-4-x2-min.jpg" alt="artist logo 4" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Bi-2</span>
+                                        <span class="artists-list__genre">Rock</span>
+                                    </div>
+                                </a>
+                                
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo margin-bottom-small">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-5-x2-min.jpg" alt="artist logo 5" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">The Who</span>
+                                        <span class="artists-list__genre">Rock</span>
+                                    </div>
+                                </a>
+                               
+                                
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo margin-bottom-small">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-6-x2-min.jpg" alt="artist logo 6" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Staind</span>
+                                        <span class="artists-list__genre">Alternative</span>
+                                    </div>
+                                </a>
+                                      
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo margin-bottom-small">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-7-x2-min.jpg" alt="artist logo 7" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Scorpions</span>
+                                        <span class="artists-list__genre">Hard Rock</span>
+                                    </div>
+                                </a>
+                                
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo margin-bottom-small">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-8-x2-min.jpg" alt="artist logo 8" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Queen</span>
+                                        <span class="artists-list__genre">Rock</span>
+                                    </div>
+                                </a>
+                                
+                            </li>
+                         </ul>
+                  
+                </section>
+
+
+                <section class="section-popular">
+                    
+                       <h2 class="heading-2 margin-bottom-medium">
+                            Popular
+                       </h2>
+
+
+
+                       <ul class="artists-list artists-list--large">
+                        <li class="artists-list__item">
+                            <a href="#" class="artists-list__link">
+                                <div class="artists-list__logo">
+
+                                    <picture>
+                                        <source
+                                        srcset="
+                                            img/artists/artists-large/artists-large-webp/artist-secondary-linkin-park-x1.webp 296w,
+                                            img/artists/artists-large/artists-large-webp/artist-secondary-linkin-park-x2.webp 592w,
+                                            img/artists/artists-large/artists-large-webp/artist-secondary-linkin-park-x3.webp 888w
+                                        "
+                                        type="image/webp"
+                                        sizes="(min-width: 1440px) 20vw"
+                                        />
+                                        <img 
+                                        srcset="
+                                        img/artists/artists-large/artists-large-jpeg/artist-secondary-linkin-park-x1-min.jpg 296w,
+                                        img/artists/artists-large/artists-large-jpeg/artist-secondary-linkin-park-x2-min.jpg 592w,
+                                        img/artists/artists-large/artists-large-jpeg/artist-secondary-linkin-park-x3-min.jpg 888w
+                                        "
+                                        
+                                        src="img/artists/artists-large/artists-large-jpeg/artist-secondary-linkin-park-x1-min.jpg" 
+                                        alt="artist photo 1" 
+                                        class="artists-list__logo-img"
+                                    />
+                                    </picture>
+
+                                    
+                                </div>
+                                <div class="artists-list__description">
+                                    <span class="artists-list__name">Linkin Park</span>
+                                    <span class="artists-list__genre">Alternative</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artists-list__item">
+                            <a href="#" class="artists-list__link">
+                                <div class="artists-list__logo">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                img/artists/artists-large/artists-large-webp/artist-secondary-nirvana-x1.webp 296w,
+                                                img/artists/artists-large/artists-large-webp/artist-secondary-nirvana-x2.webp 592w,
+                                                img/artists/artists-large/artists-large-webp/artist-secondary-nirvana-x3.webp 888w
+                                            "
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 20vw"
+                                        />
+                                        <img 
+                                        srcset="
+                                        img/artists/artists-large/artists-large-jpeg/artist-secondary-nirvana-x1-min.jpg 296w,
+                                        img/artists/artists-large/artists-large-jpeg/artist-secondary-nirvana-x2-min.jpg 592w,
+                                        img/artists/artists-large/artists-large-jpeg/artist-secondary-nirvana-x3-min.jpg 888w
+                                        "
+                                        
+                                        src="img/artists/artists-large/artists-large-jpeg/artist-secondary-nirvana-x1-min.jpg" 
+                                        alt="artist photo 2" 
+                                        class="artists-list__logo-img"
+                                    />
+                                    </picture>
+                                </div>
+                                <div class="artists-list__description">
+                                    <span class="artists-list__name">Nirvana</span>
+                                    <span class="artists-list__genre">Grunge</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artists-list__item">
+                            <a href="#" class="artists-list__link">
+                                <div class="artists-list__logo">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                img/artists/artists-large/artists-large-webp/artist-secondary-limp-bizkit-x1.webp 296w,
+                                                img/artists/artists-large/artists-large-webp/artist-secondary-limp-bizkit-x2.webp 592w,
+                                                img/artists/artists-large/artists-large-webp/artist-secondary-limp-bizkit-x3.webp 888w
+                                            "
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 20vw"
+                                        />
+                                        <img 
+                                        srcset="
+                                        img/artists/artists-large/artists-large-jpeg/artist-secondary-limp-bizkit-x1-min.jpg 296w,
+                                        img/artists/artists-large/artists-large-jpeg/artist-secondary-limp-bizkit-x2-min.jpg 592w,
+                                        img/artists/artists-large/artists-large-jpeg/artist-secondary-limp-bizkit-x3-min.jpg 888w
+                                        "
+                                        
+                                        src="img/artists/artists-large/artists-large-jpeg/artist-secondary-limp-bizkit-x1-min.jpg" 
+                                        alt="artist photo 3" 
+                                        class="artists-list__logo-img"
+                                    />
+                                    </picture>
+                                </div>
+                                <div class="artists-list__description">
+                                    <span class="artists-list__name">Limp Bizkit</span>
+                                    <span class="artists-list__genre">Nu metal</span>
+                                </div>
+                            </a>
+                        </li>
+                       </ul>
+
+
+
+
+
+                       <ul class="artists-list artists-list--medium">
+                        <li class="artists-list__item">
+                            <a href="#" class="artists-list__link">
+                                <div class="artists-list__logo">
+                                    <picture>
+                                        <source
+                                        srcset="
+                                            img/artists/artists-small/artists-small-webp/artists-small-1-x1.webp 138w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-1-x2.webp 276w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-1-x3.webp 414w
+                                        "
+                                        type="image/webp"
+                                        sizes="(min-width: 1440px) 10vw"
+                                        />
+                                        <img 
+                                            srcset="
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-1-x1-min.jpg 138w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-1-x2-min.jpg 276w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-1-x3-min.jpg 414w
+                                            "
+                                            sizes="(min-width: 1440px) 10vw"
+                                            src="img/artists/artists-small/artists-small-jpeg/artists-small-1-x1-min.jpg" 
+                                            alt="artist photo 1" 
+                                            class="artists-list__logo-img"
+                                        />
+                                    </picture>
+                                </div>
+                                <div class="artists-list__description">
+                                    <span class="artists-list__name">Bi-2</span>
+                                    <span class="artists-list__genre">Alternative</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artists-list__item">
+                            <a href="#" class="artists-list__link">
+                                <div class="artists-list__logo">
+                                    <picture>
+                                        <source
+                                        srcset="
+                                            img/artists/artists-small/artists-small-webp/artists-small-2-x1.webp 138w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-2-x2.webp 276w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-2-x3.webp 414w
+                                        "
+                                        type="image/webp"
+                                        sizes="(min-width: 1440px) 10vw"
+                                        />
+                                        <img 
+                                            srcset="
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-2-x1-min.jpg 138w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-2-x2-min.jpg 276w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-2-x3-min.jpg 414w
+                                            "
+                                            sizes="(min-width: 1440px) 10vw"
+                                            src="img/artists/artists-small/artists-small-jpeg/artists-small-2-x1-min.jpg" 
+                                            alt="artist photo 2" 
+                                            class="artists-list__logo-img"
+                                        />
+                                    </picture>
+                                </div>
+                                <div class="artists-list__description">
+                                    <span class="artists-list__name">The Who</span>
+                                    <span class="artists-list__genre">Genre</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artists-list__item">
+                            <a href="#" class="artists-list__link">
+                                <div class="artists-list__logo">
+                                    <picture>
+                                        <source
+                                        srcset="
+                                            img/artists/artists-small/artists-small-webp/artists-small-3-x1.webp 138w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-3-x2.webp 276w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-3-x3.webp 414w
+                                        "
+                                        type="image/webp"
+                                        sizes="(min-width: 1440px) 10vw"
+                                        />
+                                        <img 
+                                            srcset="
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-3-x1-min.jpg 138w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-3-x2-min.jpg 276w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-3-x3-min.jpg 414w
+                                            "
+                                            sizes="(min-width: 1440px) 10vw"
+                                            src="img/artists/artists-small/artists-small-jpeg/artists-small-3-x1-min.jpg" 
+                                            alt="artist photo 3" 
+                                            class="artists-list__logo-img"
+                                        />
+                                    </picture>
+                                </div>
+                                <div class="artists-list__description">
+                                    <span class="artists-list__name">Bi-2</span>
+                                    <span class="artists-list__genre">Alternative</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artists-list__item">
+                            <a href="#" class="artists-list__link">
+                                <div class="artists-list__logo">
+                                    <picture>
+                                        <source
+                                        srcset="
+                                            img/artists/artists-small/artists-small-webp/artists-small-4-x1.webp 138w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-4-x2.webp 276w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-4-x3.webp 414w
+                                        "
+                                        type="image/webp"
+                                        sizes="(min-width: 1440px) 10vw"
+                                        />
+                                        <img 
+                                            srcset="
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-4-x1-min.jpg 138w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-4-x2-min.jpg 276w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-4-x3-min.jpg 414w
+                                            "
+                                            sizes="(min-width: 1440px) 10vw"
+                                            src="img/artists/artists-small/artists-small-jpeg/artists-small-4-x1-min.jpg" 
+                                            alt="artist photo 4" 
+                                            class="artists-list__logo-img"
+                                        />
+                                    </picture>
+                                </div>
+                                <div class="artists-list__description">
+                                    <span class="artists-list__name">Staind</span>
+                                    <span class="artists-list__genre">Alternative</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artists-list__item">
+                            <a href="#" class="artists-list__link">
+                                <div class="artists-list__logo">
+                                    <picture>
+                                        <source
+                                        srcset="
+                                            img/artists/artists-small/artists-small-webp/artists-small-5-x1.webp 138w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-5-x2.webp 276w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-5-x3.webp 414w
+                                        "
+                                        type="image/webp"
+                                        sizes="(min-width: 1440px) 10vw"
+                                        />
+                                        <img 
+                                            srcset="
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-5-x1-min.jpg 138w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-5-x2-min.jpg 276w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-5-x3-min.jpg 414w
+                                            "
+                                            sizes="(min-width: 1440px) 10vw"
+                                            src="img/artists/artists-small/artists-small-jpeg/artists-small-5-x1-min.jpg" 
+                                            alt="artist photo 5" 
+                                            class="artists-list__logo-img"
+                                        />
+                                    </picture>
+                                </div>
+                                <div class="artists-list__description">
+                                    <span class="artists-list__name">Scorpions</span>
+                                    <span class="artists-list__genre">Hard Rock</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="artists-list__item">
+                            <a href="#" class="artists-list__link">
+                                <div class="artists-list__logo">
+                                    <picture>
+                                        <source
+                                        srcset="
+                                            img/artists/artists-small/artists-small-webp/artists-small-6-x1.webp 138w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-6-x2.webp 276w,
+                                            img/artists/artists-small/artists-small-webp/artists-small-6-x3.webp 414w
+                                        "
+                                        type="image/webp"
+                                        sizes="(min-width: 1440px) 10vw"
+                                        />
+                                        <img 
+                                            srcset="
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-6-x1-min.jpg 138w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-6-x2-min.jpg 276w,
+                                            img/artists/artists-small/artists-small-jpeg/artists-small-6-x3-min.jpg 414w
+                                            "
+                                            sizes="(min-width: 1440px) 10vw"
+                                            src="img/artists/artists-small/artists-small-jpeg/artists-small-6-x1-min.jpg" 
+                                            alt="artist photo 6" 
+                                            class="artists-list__logo-img"
+                                        />
+                                    </picture>
+                                </div>
+                                <div class="artists-list__description">
+                                    <span class="artists-list__name">Quenn</span>
+                                    <span class="artists-list__genre">Rock</span>
+                                </div>
+                            </a>
+                        </li>
+                       </ul>
+                       
+                  
+                </section>
+
+
+            </main>
+        </div>
+    
+        <aside class="favorite-artists">
+            <header class="favorite-artists__header margin-bottom-large">
+                <h2 class="heading-2">Favorite Artists</h2>
+                <a href="#" class="favorite-artists__link">View All</a>
+            </header>
+
+            <ul class="artists-list artists-list--vertical">
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-1-x2-min.jpg" alt="artist logo 1" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Linkin Park</span>
+                                        <span class="artists-list__genre">Alternative</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-2-x2-min.jpg" alt="artist logo 2" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Nirvana</span>
+                                        <span class="artists-list__genre">Grunge</span>
+                                    </div>
+                                </a>
+                                
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-3-x2-min.png" alt="artist logo 3" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Limp Bizkit</span>
+                                        <span class="artists-list__genre">Nu metal</span>
+                                    </div>
+                                </a>
+                               
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-4-x2-min.jpg" alt="artist logo 4" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">Bi-2</span>
+                                        <span class="artists-list__genre">Rock</span>
+                                    </div>
+                                </a>
+                                
+                            </li>
+                            <li class="artists-list__item">
+                                <a href="#" class="artists-list__link">
+                                    <div class="artists-list__logo">
+                                        <img src="img/artists/logos/artists-logos-jpeg/artists-logos-jpeg-x2/artist-logo-5-x2-min.jpg" alt="artist logo 5" class="artists-list__logo-img">
+                                    </div>
+                                    <div class="artists-list__description">
+                                        <span class="artists-list__name">The Who</span>
+                                        <span class="artists-list__genre">Rock</span>
+                                    </div>
+                                </a>
+    
+                            </li>
+            </ul>
             
-
-            <ul class="sidebar__navigation-list">
-                
-                <li class="sidebar__navigation-item">
-                    <a href="#" class="sidebar__navigation-link button-round">
-                        <svg class="sidebar__navigation-icon">
-                            <use href="img/sprite.svg#icon-Calendar"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="sidebar__navigation-item">
-                    <a href="#" class="sidebar__navigation-link button-round">
-                        <svg class="sidebar__navigation-icon">
-                            <use href="img/sprite.svg#icon-Music"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="sidebar__navigation-item">
-                    <a href="#" class="sidebar__navigation-link button-round">
-                        <svg class="sidebar__navigation-icon">
-                            <use href="img/sprite.svg#icon-Favorites-Default"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="sidebar__navigation-item">
-                    <a href="#" class="sidebar__navigation-link button-round">
-                        <svg class="sidebar__navigation-icon">
-                            <use href="img/sprite.svg#icon-Messages"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="sidebar__navigation-item">
-                    <a href="#" class="sidebar__navigation-link button-round">
-                        <svg class="sidebar__navigation-icon">
-                            <use href="img/sprite.svg#icon-File-Invoice"></use>
-                        </svg>
-                    </a>
-                </li>
-                
-            </ul>
-        </nav>
-
-        <menu class="sidebar__menu">
-            <ul class="sidebar__menu-list">
-                <li class="sidebar__menu-item">
-                    <button type="button" class="button-round">
-                        <svg class="sidebar__menu-icon">
-                            <use href="img/sprite.svg#icon-Bell"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="sidebar__menu-item">
-                    <button type="button" class="button-round">
-                        <svg class="sidebar__menu-icon">
-                            <use href="img/sprite.svg#icon-User"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="sidebar__menu-item">
-                    <button type="button" class="button-round">
-                        <svg class="sidebar__menu-icon">
-                            <use href="img/sprite.svg#icon-Arrow-Bar-Right"></use>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-        </menu>
-    </aside>
+        </aside>
+    </div>
 </body>
 </html>

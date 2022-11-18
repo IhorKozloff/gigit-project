@@ -15,7 +15,16 @@ html {
 body {
     font-family: $primary-font;
     font-weight: 400;
+    color: $color-black;
+}
+.layout-container {
+    max-width: 144rem;
+    margin: 0 auto;
     display: flex;
+}
+.content-container {
+    flex-basis: 101.6rem;
+    padding: 2.8rem 4.4rem 0;
 }
 ul {
     list-style: none;

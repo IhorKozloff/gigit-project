@@ -1,9 +1,11 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "abstracts/utilities";
 @import "base/typography";
 @import "base/base";
 @import "base/animations";
 @import "components/buttons";
+@import "components/artists-list";
 
 
 
@@ -13,6 +15,9 @@
 
 @import "layout/header";
 @import "layout/sidebar";
+@import "layout/section-title";
+@import "layout/section-popular";
+@import "layout/favorite-artists";
 @import "layout/footer";
 
 

@@ -2,7 +2,11 @@
 //     font-family: serif;
 //     font-weight: normal;
 // }
-
+@font-face {
+    font-family: "TTNorms";
+    src: url("/assets/fonts/TTNorms-Medium.ttf") format('truetype');
+    font-weight: 500;
+}
 .heading-1 {
     font-size: 3.2rem;
     line-height: 1.3;
