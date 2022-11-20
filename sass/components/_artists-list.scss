@@ -1,108 +1,146 @@
 .artists-list {
     display: flex;
-    gap: 1.6rem;
-    flex-wrap: wrap;
+    gap: 2rem;
 
     &__item {
-        flex-basis: 10.2rem;
-        flex-shrink: 0;
-        
+        flex-basis: 29.6rem;
+        overflow: hidden;
+
+        &:hover {
+            //transform: translateY(-4px) ;
+            box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.1);
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+       
     }
+
     &__link:link,
     &__link:visited {
         color: inherit;
-        @include flex-center;
-        flex-direction: column;
+
     }
     &__logo {
         background-color: #F6F8F9;
-        border-radius: 50%;
+        width: 29.6rem;
+        height: 29.6rem;
+        margin-bottom: 1.6rem;
         overflow: hidden;
-        width: 6rem;
     }
     &__logo-img {
         display: block;
         width: 100%;
         height: auto;
+        transition: transform 250ms;
     }
     &__description {
 
         span {
             line-height: 1.5;
-            text-align: center;
             display: block;
         }
     }
     &__name {
         font-size: 1.4rem;
         font-weight: 500;
+        margin-bottom: 0.4rem;
     }
     &__genre {
         font-size: 1.2rem;
         color: $color-grey-1;
-        margin-top: 0.4rem;
     }
 
-    // modifications
+    &.artists-list--small {
+        .artists-list__item {
+            flex-basis: 13.8rem;
+        }
+        .artists-list__logo {
+            width: 13.8rem;
+            height: 13.8rem;
+            margin-bottom: 1.2rem;
+        }
 
-    &.artists-list--vertical {
+    }
+
+    &.artists-list-round-items {
+        gap: 1.6rem;
+
+        .artists-list__item {
+            flex-basis: 10.2rem;
+            transition: all 250ms;
+            &:hover {
+                transform: translateY(-4px) ;
+                box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.1);
+                border-radius: 1rem;
+                img {
+                    transform: scale(1);
+                }
+            }
+        }
+        .artists-list__logo {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 1.2rem;
+        }
+        .artists-list__description {
+
+            span {
+                text-align: center;
+            }
+        }
+    }
+
+    &.artists-list-round-items--vertical {
         flex-direction: column;
         align-items: flex-start;
         gap: 2.4rem;
-
         .artists-list__item {
-            flex-basis: 0;
+            flex-basis: auto;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: -100%;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: $color-black;
+                
+                transition: transform 500ms;
+            }
         }
+        .artists-list__item:hover {
+            transform: translateY(0);
+            box-shadow: none;
+            img {
+                transform: scale(1);
+            }
+            &::after {
+                transform: translateX(100%);
+                transition: transform 1000ms;
+            }
+        } 
+
         .artists-list__link:link,
         .artists-list__link:visited {
-            flex-direction: row;
-            gap: 1.6rem;
+            display: flex;
         }
-
         .artists-list__logo {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0;
+            margin-right: 1.6rem;
             background-color: #EFF0F2;
-          width: 4rem;
-          height: 4rem;
-        }
-
-        span {
-            text-align: start;
         }
     }
-
-
-    &.artists-list--large {
-        gap: 2rem;
-
-        .artists-list__link:link,
-        .artists-list__link:visited {
-            align-items: flex-start;
-        }
-        span {
-            text-align: start;
-        }
-        .artists-list__item {
-            flex-basis: 29.6rem;
-        }
-
-        .artists-list__logo {
-            background-color: transparent;
-            border-radius: 0;
-            width: 29.6rem;
-            height: 29.6rem;
-            margin-bottom: 1.6rem;
-        }
-
-        .artists-list__name {
-            font-size: 1.8rem;
-        }
-        .artists-list__genre {
-            font-size: 1.2rem;
-            color: $color-grey-1;
-            margin-top: 0.4rem;
-        }
-    }
-
-    
 }
+
 

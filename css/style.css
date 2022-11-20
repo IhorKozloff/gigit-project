@@ -15,6 +15,11 @@
   src: url("/assets/fonts/TTNorms-Medium.ttf") format("truetype");
   font-weight: 500; }
 
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/assets/fonts/SFProDisplay-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
 .heading-1 {
   font-size: 3.2rem;
   line-height: 1.3; }
@@ -52,10 +57,6 @@ body {
   margin: 0 auto;
   display: flex; }
 
-.content-container {
-  flex-basis: 101.6rem;
-  padding: 2.8rem 4.4rem 0; }
-
 ul {
   list-style: none; }
 
@@ -85,76 +86,164 @@ button {
   .button-round:active, .button-round:link:active, .button-round:visited:active {
     transform: translateY(-1px); }
 
+.button-large, .button-large:link, .button-large:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FF715B;
+  padding: 1.3rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 500ms; }
+
+.button-large::after {
+  content: '';
+  height: 80px;
+  width: 20px;
+  position: absolute;
+  top: -15px;
+  left: -55px;
+  transform: skewX(-45deg);
+  transition: transform 0.2s ease;
+  pointer-events: none; }
+
+.button-large:hover {
+  transition: background-color 250ms; }
+  .button-large:hover::after {
+    transform: translateX(300px) skewX(-45deg); }
+
+.button-large--primary {
+  background-color: #FF715B;
+  color: #FFF; }
+
+.button-large--primary:hover {
+  background-color: #ff5b42; }
+
+.button-large--primary::after {
+  background-color: #FFF; }
+
+.button-large--secondary {
+  color: #FF715B; }
+
+.button-large--secondary:hover {
+  background-color: #ff5b42;
+  color: #FFF; }
+
+.button-large--secondary::after {
+  background-color: #FFF; }
+
 .artists-list {
   display: flex;
-  gap: 1.6rem;
-  flex-wrap: wrap; }
+  gap: 2rem; }
   .artists-list__item {
-    flex-basis: 10.2rem;
-    flex-shrink: 0; }
+    flex-basis: 29.6rem;
+    overflow: hidden; }
+    .artists-list__item:hover {
+      box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.1); }
+      .artists-list__item:hover img {
+        transform: scale(1.1); }
   .artists-list__link:link, .artists-list__link:visited {
-    color: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
+    color: inherit; }
   .artists-list__logo {
     background-color: #F6F8F9;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 6rem; }
+    width: 29.6rem;
+    height: 29.6rem;
+    margin-bottom: 1.6rem;
+    overflow: hidden; }
   .artists-list__logo-img {
     display: block;
     width: 100%;
-    height: auto; }
+    height: auto;
+    transition: transform 250ms; }
   .artists-list__description span {
     line-height: 1.5;
-    text-align: center;
     display: block; }
   .artists-list__name {
     font-size: 1.4rem;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-bottom: 0.4rem; }
   .artists-list__genre {
     font-size: 1.2rem;
-    color: #697077;
-    margin-top: 0.4rem; }
-  .artists-list.artists-list--vertical {
+    color: #697077; }
+  .artists-list.artists-list--small .artists-list__item {
+    flex-basis: 13.8rem; }
+  .artists-list.artists-list--small .artists-list__logo {
+    width: 13.8rem;
+    height: 13.8rem;
+    margin-bottom: 1.2rem; }
+  .artists-list.artists-list-round-items {
+    gap: 1.6rem; }
+    .artists-list.artists-list-round-items .artists-list__item {
+      flex-basis: 10.2rem;
+      transition: all 250ms; }
+      .artists-list.artists-list-round-items .artists-list__item:hover {
+        transform: translateY(-4px);
+        box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.1);
+        border-radius: 1rem; }
+        .artists-list.artists-list-round-items .artists-list__item:hover img {
+          transform: scale(1); }
+    .artists-list.artists-list-round-items .artists-list__logo {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      margin-bottom: 1.2rem; }
+    .artists-list.artists-list-round-items .artists-list__description span {
+      text-align: center; }
+  .artists-list.artists-list-round-items--vertical {
     flex-direction: column;
     align-items: flex-start;
     gap: 2.4rem; }
-    .artists-list.artists-list--vertical .artists-list__item {
-      flex-basis: 0; }
-    .artists-list.artists-list--vertical .artists-list__link:link,
-    .artists-list.artists-list--vertical .artists-list__link:visited {
-      flex-direction: row;
-      gap: 1.6rem; }
-    .artists-list.artists-list--vertical .artists-list__logo {
-      background-color: #EFF0F2;
+    .artists-list.artists-list-round-items--vertical .artists-list__item {
+      flex-basis: auto;
+      position: relative; }
+      .artists-list.artists-list-round-items--vertical .artists-list__item::after {
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #12141D;
+        transition: transform 500ms; }
+    .artists-list.artists-list-round-items--vertical .artists-list__item:hover {
+      transform: translateY(0);
+      box-shadow: none; }
+      .artists-list.artists-list-round-items--vertical .artists-list__item:hover img {
+        transform: scale(1); }
+      .artists-list.artists-list-round-items--vertical .artists-list__item:hover::after {
+        transform: translateX(100%);
+        transition: transform 1000ms; }
+    .artists-list.artists-list-round-items--vertical .artists-list__link:link,
+    .artists-list.artists-list-round-items--vertical .artists-list__link:visited {
+      display: flex; }
+    .artists-list.artists-list-round-items--vertical .artists-list__logo {
       width: 4rem;
-      height: 4rem; }
-    .artists-list.artists-list--vertical span {
-      text-align: start; }
-  .artists-list.artists-list--large {
-    gap: 2rem; }
-    .artists-list.artists-list--large .artists-list__link:link,
-    .artists-list.artists-list--large .artists-list__link:visited {
-      align-items: flex-start; }
-    .artists-list.artists-list--large span {
-      text-align: start; }
-    .artists-list.artists-list--large .artists-list__item {
-      flex-basis: 29.6rem; }
-    .artists-list.artists-list--large .artists-list__logo {
-      background-color: transparent;
-      border-radius: 0;
-      width: 29.6rem;
-      height: 29.6rem;
-      margin-bottom: 1.6rem; }
-    .artists-list.artists-list--large .artists-list__name {
-      font-size: 1.8rem; }
-    .artists-list.artists-list--large .artists-list__genre {
-      font-size: 1.2rem;
-      color: #697077;
-      margin-top: 0.4rem; }
+      height: 4rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0;
+      margin-right: 1.6rem;
+      background-color: #EFF0F2; }
+
+.content-container {
+  flex-basis: 101.6rem;
+  padding: 2.8rem 4.4rem 0; }
+
+.fav-item-content-container {
+  flex-basis: 136rem;
+  padding: 3.2rem 4.4rem 5.3rem;
+  border: 1px solid black; }
+
+.flex-container {
+  padding-top: 5.6rem;
+  padding-left: 3.2rem;
+  display: flex;
+  gap: 8rem; }
 
 .header {
   height: 7rem;
@@ -181,12 +270,25 @@ button {
     color: #8B929A;
     border: 1px solid #D4DAE1;
     border-radius: 6px; }
-  .header__form-icon {
+  .header__form-btn {
     position: absolute;
     top: 50%;
     right: 1.2rem;
     transform: translateY(-50%);
-    fill: #8B929A; }
+    color: #8B929A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms; }
+    .header__form-btn:hover {
+      color: #12141D; }
+      .header__form-btn:hover svg {
+        transform: scale(1.05); }
+  .header__form-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: currentColor;
+    transition: all 250ms; }
 
 .sidebar {
   min-height: 100vh;
@@ -272,6 +374,13 @@ button {
       background-image: url("../../img/artists/title-wallpaper/artist-primary-nirvana-x2.png"); } }
   .section-title__text-wrapper {
     width: 62%; }
+  .section-title__description {
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.5; }
+
+.section-popular {
+  padding-bottom: 5.7rem; }
 
 .favorite-artists {
   padding: 4rem 3.2rem 0;
@@ -287,4 +396,190 @@ button {
     font-size: 1.4rem;
     line-height: 1.5;
     font-weight: 500;
-    color: #697077; }
+    color: #697077;
+    position: relative;
+    transition: all 250ms; }
+    .favorite-artists__link:link::after, .favorite-artists__link:visited::after {
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #38F094;
+      opacity: 0;
+      transition: all 500ms; }
+    .favorite-artists__link:link:hover, .favorite-artists__link:visited:hover {
+      color: #38F094;
+      transform: translateY(-3px); }
+      .favorite-artists__link:link:hover::after, .favorite-artists__link:visited:hover::after {
+        transform: translateY(-10px);
+        opacity: 1; }
+
+.fav-item-header {
+  flex-basis: auto;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  align-items: center; }
+  .fav-item-header__btn-wrapper {
+    width: 2.4rem;
+    height: 2.4rem; }
+  .fav-item-header__checkbox {
+    display: none; }
+  .fav-item-header__checkbox:checked ~ .fav-item-header__button .fav-item-header__icon--selected {
+    opacity: 1; }
+  .fav-item-header__checkbox:checked ~ .fav-item-header__button .fav-item-header__icon {
+    opacity: 0; }
+  .fav-item-header__button {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.2s; }
+    .fav-item-header__button:hover {
+      transform: translateY(-2px) scale(1.01); }
+      .fav-item-header__button:hover .fav-item-header__icon {
+        fill: orange; }
+    .fav-item-header__button:active {
+      transform: translateY(-1px); }
+  .fav-item-header__icon {
+    transition: all 250ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .fav-item-header__icon--selected {
+    opacity: 0;
+    transition: all 250ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; }
+
+.fav-item-hero {
+  border: 1px solid red;
+  width: 100%;
+  height: 30.6rem;
+  background-image: url("../../img/artist-page/hero-wallpapers/hero-wallpaper-x1-min.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  background-size: contain; }
+  @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .fav-item-hero {
+      background-image: url("../../img/artist-page/hero-wallpapers/hero-wallpaper-x2-min.png"); } }
+
+.gallery {
+  max-width: 36rem; }
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px; }
+  .gallery__item {
+    flex-basis: 11.9rem;
+    height: auto;
+    cursor: pointer;
+    overflow: hidden; }
+    .gallery__item:hover img {
+      transform: scale(1.2); }
+  .gallery__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 250ms; }
+  .gallery__title {
+    display: flex;
+    align-items: center;
+    margin-top: 1.6rem;
+    margin-bottom: 2rem; }
+  .gallery__title-img-wrapper {
+    width: 4.8rem;
+    height: 4.8rem; }
+  .gallery__img {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .gallery__title-text {
+    margin-left: 1rem;
+    margin-right: 0.8rem;
+    font-family: 'SFProDisplay';
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000; }
+  .gallery__title-icon {
+    width: 1.7rem;
+    height: 1.7rem; }
+
+.fav-item-about__text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  max-width: 80rem;
+  margin-top: 1.6rem; }
+
+.fav-item-about__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.8rem;
+  margin-bottom: 5.6rem; }
+
+.fav-item-about__btn-list {
+  display: flex;
+  flex-basis: 46.5rem;
+  max-width: 46.5rem;
+  gap: 2.4rem; }
+  .fav-item-about__btn-list li {
+    width: 50%; }
+
+.fav-item-about__links-list {
+  display: flex;
+  gap: 2.4rem; }
+
+.fav-item-about__link {
+  color: #8B929A;
+  transition: color 250ms;
+  display: block;
+  position: relative; }
+  .fav-item-about__link-icon {
+    fill: currentColor;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+    z-index: 10; }
+  .fav-item-about__link::after {
+    content: '';
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    background-color: #f3f3f4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 250ms;
+    z-index: 9; }
+
+.fav-item-about__link:hover {
+  color: #595f66; }
+  .fav-item-about__link:hover::after {
+    opacity: 1; }
+
+.fav-item-about__details-list {
+  max-width: 36rem;
+  margin-top: 3.2rem; }
+  .fav-item-about__details-list li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid #D4DAE1; }
+  .fav-item-about__details-list li:not(:last-child) {
+    margin-bottom: 1.2rem; }
+  .fav-item-about__details-list span {
+    font-size: 1.4rem;
+    line-height: 1.5; }
+
+.fav-item-about__details-title {
+  font-weight: 600; }

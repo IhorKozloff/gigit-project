@@ -7,17 +7,23 @@
 @import "components/buttons";
 @import "components/artists-list";
 
-
-
-
-
 @import "pages/home";
+@import "pages/fav-item";
+
+
+
+
+
 
 @import "layout/header";
 @import "layout/sidebar";
 @import "layout/section-title";
 @import "layout/section-popular";
 @import "layout/favorite-artists";
+@import "layout/fav-item-header";
+@import "layout/fav-item-hero";
+@import "layout/fav-item-gallery";
+@import "layout/fav-item-about";
 @import "layout/footer";
 
 

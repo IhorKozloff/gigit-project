@@ -1,0 +1,59 @@
+.fav-item-header {
+    flex-basis: auto;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    align-items: center;
+    &__btn-wrapper {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    &__checkbox {
+        display: none;
+    }
+    &__checkbox:checked ~ &__button {
+        .fav-item-header__icon--selected {
+            opacity: 1;
+        }
+        
+    }
+    &__checkbox:checked ~ &__button {
+        .fav-item-header__icon {
+            opacity: 0;
+        }
+        
+    }
+    &__button {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            .fav-item-header__icon {
+                fill: orange;
+            }
+            transform: translateY(-2px) scale(1.01);
+        }
+        &:active {
+            transform: translateY(-1px);
+        }
+    }
+    &__icon {
+        transition: all 250ms;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__icon--selected {
+        opacity: 0;
+        transition: all 250ms;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+}

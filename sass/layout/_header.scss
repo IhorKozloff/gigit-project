@@ -27,11 +27,28 @@
         border: 1px solid $color-grey-light-1;
         border-radius: 6px;
     }
-    &__form-icon {
+    &__form-btn {
         position: absolute;
         top: 50%;
         right: 1.2rem;
         transform: translateY(-50%);
-        fill: $color-grey-2;
+        color: $color-grey-2;
+        @include flex-center;
+        transition: all 250ms;
+
+        &:hover {
+            
+            color: $color-black;
+            
+            svg {
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__form-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: currentColor;
+        transition: all 250ms;
     }
 }

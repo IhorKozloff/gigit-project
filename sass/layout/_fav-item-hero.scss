@@ -1,0 +1,29 @@
+.fav-item-hero {
+    border: 1px solid red;
+    
+    width: 100%;
+    height: 30.6rem;
+    background-image: 
+        // url('../../img/artist-page/hero-wallpapers/hero-wallpaper-secondary-x1-min.jpg'),
+        url('../../img/artist-page/hero-wallpapers/hero-wallpaper-x1-min.png')
+        
+    ;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    background-size: contain;
+
+    @media 
+        (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: 
+                // url('../../img/artist-page/hero-wallpapers/hero-wallpaper-secondary-x2-min.jpg'),
+                url('../../img/artist-page/hero-wallpapers/hero-wallpaper-x2-min.png')
+            ;
+            
+    }
+
+
+}
