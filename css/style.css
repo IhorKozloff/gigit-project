@@ -39,6 +39,9 @@
   .heading-3--regular {
     font-weight: 400; }
 
+.heading-4 {
+  font-weight: 400; }
+
 *,
 *::before,
 *::after {
