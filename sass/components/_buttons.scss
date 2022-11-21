@@ -90,3 +90,26 @@
     }
 }
 
+.close-btn {
+
+    @include flex-center;
+
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: $color-grey-2;
+        transition: all 250ms;
+    }
+    &:hover {
+        svg {
+            fill: $color-black;
+            transform: scale(1.1);
+        }
+    }
+    &:active {
+        svg {
+            transform: scale(1.02);
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+.auth-page {
+    max-width: 56rem;
+    padding: 5.6rem 8rem;
+    border-radius: 1.6rem;
+    background-color: $color-white;
+
+    &__btn-list {
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+        li {
+            width: 20rem;
+        }
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        font-weight: 500;
+        padding: 5px;
+        color: $color-coral;;
+    }
+
+    &__close-btn-wrapper {
+        position: absolute;
+        top: 3.2rem;
+        right: 3.2rem;
+    }
+}
