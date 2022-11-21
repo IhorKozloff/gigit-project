@@ -15,12 +15,12 @@
 
 @font-face {
   font-family: "TTNorms";
-  src: url("../../assets/fonts/TTNorms-Medium.ttf") format("truetype");
+  src: url("../assets/fonts/TTNorms-Medium.ttf") format("truetype");
   font-weight: 500; }
 
 @font-face {
   font-family: "SFProDisplay";
-  src: url("../../assets/fonts/SFProDisplay-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/SFProDisplay-Bold.ttf") format("truetype");
   font-weight: 700; }
 
 .heading-1 {
@@ -406,7 +406,7 @@ button {
   content: '';
   width: 14%;
   height: 14%;
-  background-image: url("../../img/Calendar Plus.svg");
+  background-image: url("../img/Calendar Plus.svg");
   opacity: 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -705,14 +705,14 @@ button {
   border: 1px solid red;
   width: 100%;
   height: 30.6rem;
-  background-image: url("../../img/artist-page/hero-wallpapers/hero-wallpaper-x1-min.png");
+  background-image: url("../img/artist-page/hero-wallpapers/hero-wallpaper-x1-min.png");
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
   background-size: contain; }
   @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .fav-item-hero {
-      background-image: url("../../img/artist-page/hero-wallpapers/hero-wallpaper-x2-min.png"); } }
+      background-image: url("../img/artist-page/hero-wallpapers/hero-wallpaper-x2-min.png"); } }
 
 .gallery {
   max-width: 36rem; }
