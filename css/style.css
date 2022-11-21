@@ -615,7 +615,7 @@ button {
   align-items: center; }
   @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .section-title {
-      background-image: url("../img/artists/title-wallpaper/artist-main-wallpaper-x2.png"); } }
+      background-image: url("../img/artists/title-wallpaper/artist-primary-nirvana-x2.png"); } }
   .section-title__text-wrapper {
     width: 62%; }
   .section-title__description {
