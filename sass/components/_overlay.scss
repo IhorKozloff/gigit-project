@@ -5,6 +5,9 @@
     left: 0;
     right: 0;
     background-color: $color-black;
+    opacity: 0;
+    pointer-events: none;
+    
 
     &__content-container {
         position: absolute;
@@ -12,5 +15,23 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: transparent;
+        border-radius: 1.6rem;
+    overflow: hidden;
+    }
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+    &-grey {
+        background-image: linear-gradient(
+            rgba(#000, 0.35),
+            rgba(#000, 0.35)
+        );
+        background-color: transparent;
+    }
+
+    &-grey.active {
+        opacity: 1;
+        pointer-events: all;
     }
 }

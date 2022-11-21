@@ -257,13 +257,26 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #12141D; }
+  background-color: #12141D;
+  opacity: 0;
+  pointer-events: none; }
   .overlay__content-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: transparent;
+    border-radius: 1.6rem;
+    overflow: hidden; }
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all; }
+  .overlay-grey {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
     background-color: transparent; }
+  .overlay-grey.active {
+    opacity: 1;
+    pointer-events: all; }
 
 .auth-form__label {
   font-size: 1.4rem;
@@ -470,6 +483,13 @@ button {
       margin-right: 8px;
       margin-left: 4px; }
 
+.calendar-page__modal-window {
+  background-color: #FFF;
+  max-width: 56rem;
+  padding: 5.6rem 8rem; }
+  .calendar-page__modal-window-heading {
+    margin-bottom: 3.6rem; }
+
 .sidebar {
   min-height: 100vh;
   background-color: #12141D;
@@ -543,7 +563,6 @@ button {
 .auth-page {
   max-width: 56rem;
   padding: 5.6rem 8rem;
-  border-radius: 1.6rem;
   background-color: #FFF; }
   .auth-page__btn-list {
     display: flex;

@@ -9,6 +9,7 @@
         justify-content: space-between;
         align-items: center;
     }
+   
 }
 
 .section-calendar {
@@ -148,4 +149,18 @@
             }
         }
     }
+}
+
+.calendar-page__modal-window {
+    background-color: $color-white;
+    max-width: 56rem;
+    padding: 5.6rem 8rem;
+
+    &-heading {
+        margin-bottom: 3.6rem;
+    }
+
+    
+
+
 }

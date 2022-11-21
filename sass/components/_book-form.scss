@@ -1,0 +1,33 @@
+.book-form {
+    &__inputs-list {
+        li {
+            svg {
+
+            }
+        }
+    }
+    &__input-label {
+
+    }
+    &__input {
+        
+    }
+    &__price-mark {
+
+    }
+    &__total-price {
+        &-title {
+
+        }
+        &-value {
+
+        }
+    }
+    &__button-set {
+
+        & .button-large {
+            color: black;
+            background-color: $color-coral;
+        }
+    }
+}
