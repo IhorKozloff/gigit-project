@@ -258,7 +258,7 @@
     
         
     </div>
-    <div class="overlay overlay-grey active">
+    <div class="overlay overlay-grey">
         <div class="overlay__content-container">
             <div class="auth-page__close-btn-wrapper">
                 <button type="button" class="close-btn">
@@ -349,10 +349,16 @@
     <script src="../js/overlay-close.js"></script>
     <script>
         const calendarItemSet = document.querySelectorAll('.section-calendar__days-item');
+        const overlayEl = document.querySelector('.overlay');
+        const formCloseBtn = document.querySelector('.book-form__button-set-link');
+
         calendarItemSet.forEach(item => {
             item.addEventListener('click', ()=> {
-                document.querySelector('.overlay').classList.add('active');
+                overlayEl.classList.add('active');
             })
+        })
+        formCloseBtn.addEventListener('click', () => {
+            overlayEl.classList.remove('active');
         })
     </script>
 

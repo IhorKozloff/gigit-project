@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gigit | on your own</title>
+</head>
+<body>
+    <div class="layout-container">
+        <aside class="sidebar">
+
+            <a href="#" class="sidebar__button-home button-round">g</a>
+    
+    
+            <nav class="sidebar__navigation">
+    
+                
+    
+                <ul class="sidebar__navigation-list">
+                    
+                    <li class="sidebar__navigation-item">
+                        <a href="#" class="sidebar__link  sidebar__link--active button-round">
+                            <svg class="sidebar__navigation-icon">
+                                <use href="img/sprite.svg#icon-Calendar"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="browse.html" class="sidebar__link button-round">
+                            <svg class="sidebar__navigation-icon">
+                                <use href="img/sprite.svg#icon-Music"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="#" class="sidebar__link button-round">
+                            <svg class="sidebar__navigation-icon">
+                                <use href="img/sprite.svg#icon-Favorites-Default"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="#" class="sidebar__link button-round">
+                            <svg class="sidebar__navigation-icon">
+                                <use href="img/sprite.svg#icon-Messages"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="#" class="sidebar__link button-round">
+                            <svg class="sidebar__navigation-icon">
+                                <use href="img/sprite.svg#icon-File-Invoice"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+    
+            <menu class="sidebar__menu">
+                <ul class="sidebar__menu-list">
+                    <li class="sidebar__menu-item">
+                        <button type="button" class="sidebar__link button-round">
+                            <svg class="sidebar__menu-icon">
+                                <use href="img/sprite.svg#icon-Bell"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <button type="button" class="sidebar__link button-round">
+                            <svg class="sidebar__menu-icon">
+                                <use href="img/sprite.svg#icon-User"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <button type="button" class="sidebar__link button-round">
+                            <svg class="sidebar__menu-icon">
+                                <use href="img/sprite.svg#icon-Arrow-Bar-Right"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </menu>
+        </aside>
+    
+        
+    
+        <div class="calendar-page"> 
+            <header class="calendar-page__header">
+                <h1 class="heading-1">Book a gig with Nirvana</h1>
+                <div class="month-of-year-select">
+                    <button class="month-of-year-select__button">
+                        <svg class="month-of-year-select__icon">
+                            <use href="img/sprite.svg#icon-Chevron-Left"></use>
+                        </svg>
+                    </button>
+                    <span class="month-of-year-select__date">
+                        June, 2022
+                    </span>
+                    <button class="month-of-year-select__button">
+                        <svg class="month-of-year-select__icon">
+                            <use href="img/sprite.svg#icon-Chevron-Right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+            <main>
+               
+            </main>
+        </div>
+    
+        
+    </div>
+    <div class="overlay overlay-grey">
+        <div class="overlay__content-container">
+            <div class="auth-page__close-btn-wrapper">
+                <button type="button" class="close-btn">
+                    <svg class="close-btn__icon">
+                        <use href="img/sprite.svg#icon-Close"></use>
+                    </svg>
+                </button>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script src="../js/custom-select.js"></script>
+    <script src="../js/overlay-close.js"></script>
+    <script>
+        // const calendarItemSet = document.querySelectorAll('.section-calendar__days-item');
+        // calendarItemSet.forEach(item => {
+        //     item.addEventListener('click', ()=> {
+        //         document.querySelector('.overlay').classList.add('active');
+        //     })
+        // })
+    </script>
+
+</body>
+</html>
