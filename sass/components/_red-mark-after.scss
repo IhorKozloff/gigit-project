@@ -1,0 +1,16 @@
+.red-mark-after::after {
+    content: '1';
+    @include flex-center;
+    font-family: 'TTNorms', sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 500;
+    width: 1.4rem;
+    height: 1.4rem;
+    color: $color-white;
+    background-color: $color-red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

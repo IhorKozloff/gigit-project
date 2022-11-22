@@ -1,4 +1,6 @@
-.link {
+.link,
+.link:visited,
+.link:link {
     display: inline-block;
     position: relative;
     transition: color 500ms;

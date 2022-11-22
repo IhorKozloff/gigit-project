@@ -88,6 +88,15 @@
     &--secondary::after {
         background-color: $color-white;
     }
+
+
+    &--increased {
+        &:hover{
+            &::after {
+                transform: translateX(400px) skewX(-45deg);
+            }
+        }
+    }
 }
 
 .close-btn {

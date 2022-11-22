@@ -12,7 +12,7 @@
     <div class="layout-container">
         <aside class="sidebar">
 
-            <a href="#" class="sidebar__button-home button-round">g</a>
+            <a href="browse.html" class="sidebar__button-home button-round">g</a>
     
     
             <nav class="sidebar__navigation">
@@ -22,7 +22,7 @@
                 <ul class="sidebar__navigation-list">
                     
                     <li class="sidebar__navigation-item">
-                        <a href="#" class="sidebar__link  sidebar__link--active button-round">
+                        <a href="calendar.html" class="sidebar__link  sidebar__link--active button-round">
                             <svg class="sidebar__navigation-icon">
                                 <use href="img/sprite.svg#icon-Calendar"></use>
                             </svg>
@@ -42,8 +42,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="sidebar__navigation-item">
-                        <a href="#" class="sidebar__link button-round">
+                    <li class="sidebar__navigation-item red-mark-after">
+                        <a href="messages.html" class="sidebar__link button-round">
                             <svg class="sidebar__navigation-icon">
                                 <use href="img/sprite.svg#icon-Messages"></use>
                             </svg>
@@ -87,34 +87,145 @@
             </menu>
         </aside>
     
-        
-    
-        <div class="calendar-page"> 
-            <header class="calendar-page__header">
-                <h1 class="heading-1">Book a gig with Nirvana</h1>
-                <div class="month-of-year-select">
-                    <button class="month-of-year-select__button">
-                        <svg class="month-of-year-select__icon">
-                            <use href="img/sprite.svg#icon-Chevron-Left"></use>
-                        </svg>
-                    </button>
-                    <span class="month-of-year-select__date">
-                        June, 2022
-                    </span>
-                    <button class="month-of-year-select__button">
-                        <svg class="month-of-year-select__icon">
-                            <use href="img/sprite.svg#icon-Chevron-Right"></use>
-                        </svg>
-                    </button>
+        <main>
+            <div class="message-page">
+                <div class="sidebar-content section-chat">
+                    <header class="sidebar-content__header  margin-bottom-large">
+                        <form action="#" class="header__form section-chat__form">
+                            <ul class="header__form-list">
+                                <li class="header__form-item ">
+                                    <input type="text" class="header__input" placeholder="Search venues">
+                                    <button type="button" class="header__form-btn">
+                                        <svg class="header__form-icon">
+                                            <use href="img/sprite.svg#icon-Search"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </form>
+                    </header>
+
+                    <ul class="section-chat__chat-list">
+                        <li class="section-chat__chat-item active">
+                            <div class="section-chat__chat-item-logo">N</div>
+                            <div class="section-chat__chat-item-text-wrapper">
+                                <span class="section-chat__chat-item-name">Nirvana</span>
+                                <span class="section-chat__chat-item-date">On Thursday, June 16 at 9 pm</span>
+                            </div>
+                        </li>
+                        <li class="section-chat__chat-item">
+                            <div class="section-chat__chat-item-logo red-mark-after">S</div>
+                            <div class="section-chat__chat-item-text-wrapper">
+                                <span class="section-chat__chat-item-name">Staind</span>
+                                <span class="section-chat__chat-item-date">On Tuesday, June 14 at 11 pm</span>
+                            </div>
+                        </li> 
+                        <li class="section-chat__chat-item">
+                            <div class="section-chat__chat-item-logo">TW</div>
+                            <div class="section-chat__chat-item-text-wrapper">
+                                <span class="section-chat__chat-item-name">The Who</span>
+                                <span class="section-chat__chat-item-date">On Friday, June 10 at 8 pm</span>
+                            </div>
+                        </li> 
+                        <li class="section-chat__chat-item">
+                            <div class="section-chat__chat-item-logo">B</div>
+                            <div class="section-chat__chat-item-text-wrapper">
+                                <span class="section-chat__chat-item-name">Bi-2</span>
+                                <span class="section-chat__chat-item-date">On Tuesday, June 14 at 9 pm</span>
+                            </div>
+                        </li> 
+                        <li class="section-chat__chat-item">
+                            <div class="section-chat__chat-item-logo">LB</div>
+                            <div class="section-chat__chat-item-text-wrapper">
+                                <span class="section-chat__chat-item-name">Limp Bizkit</span>
+                                <span class="section-chat__chat-item-date">On Thursday, June 23 at 8 pm</span>
+                            </div>
+                        </li> 
+                    </ul>
+
+                    <ul class="section-chat__chat-list complited">
+                        <li class="section-chat__chat-item">
+                            <div class="section-chat__chat-item-logo">
+                                <svg class="section-chat__chat-item-icon">
+                                    <use href="img/sprite.svg#icon-Check"></use>
+                                </svg>
+                            </div>
+                            <div class="section-chat__chat-item-text-wrapper">
+                                <span class="section-chat__chat-item-name">Linkin Park</span>
+                                <span class="section-chat__chat-item-date">On Tuesday, May 31 at 8 pm</span>
+                            </div>
+                        </li>
+                        <li class="section-chat__chat-item">
+                            <div class="section-chat__chat-item-logo">
+                                <svg class="section-chat__chat-item-icon">
+                                    <use href="img/sprite.svg#icon-Check"></use>
+                                </svg>
+                            </div>
+                            <div class="section-chat__chat-item-text-wrapper">
+                                <span class="section-chat__chat-item-name">Beatles</span>
+                                <span class="section-chat__chat-item-date">On Monday, May 30 at 7 pm</span>
+                            </div>
+                        </li> 
+                    </ul>
                 </div>
-            </header>
-            <main>
-               
-            </main>
-        </div>
     
-        
+    
+                <section class="section-message"> 
+                    <header class="section-message__header">
+                        <h1 class="heading-1">You & Nirvana</h1> 
+                    </header>
+                </section>
+            
+                
+                <section class="sidebar-content section-details">
+                    <header class="sidebar-content__header margin-bottom-large">
+                        <h2 class="heading-2">Gig section-details</h2>
+                        
+                    </header>
+                    
+                        <div class="section-details__inform">
+                            <span class="status-mark margin-bottom-large">Invitation sent</span>
+
+                            <ul class="section-details__list">
+                                <li class="section-details__item">
+                                    <svg class="section-details__item-icon">
+                                        <use href="img/sprite.svg#icon-Calendar"></use>
+                                    </svg>
+                                    <span class="section-details__item-text">
+                                        Thursday, June 16
+                                    </span>
+                                </li>
+                                <li class="section-details__item">
+                                    <svg class="section-details__item-icon">
+                                        <use href="img/sprite.svg#icon-Clock"></use>
+                                    </svg>
+                                    <span class="section-details__item-text">
+                                        9:00 – 11:00 pm
+                                    </span>
+                                </li>
+                                <li class="section-details__item">
+                                    <svg class="section-details__item-icon">
+                                        <use href="img/sprite.svg#icon-Currency-dollar"></use>
+                                    </svg>
+                                    <span class="section-details__item-text">
+                                        200.00
+                                    </span>
+                                </li>
+                            </ul>
+                            <a href="#" class="button-large button-large--secondary button-large--increased">View Muso Page</a>
+                        </div>
+                    
+                        <div class="section-details__button-set">
+                            <a href="#" class="button-large button-large--primary button-large--increased">Pay for Gig</a>
+                            <a href="#" class="button-large button-large--secondary button-large--increased">Cancel the Gig</a>
+                        </div>
+                </section>
+            </div>
+        </main>
+
     </div>
+
+    
     <div class="overlay overlay-grey">
         <div class="overlay__content-container">
             <div class="auth-page__close-btn-wrapper">
@@ -128,6 +239,10 @@
             
         </div>
     </div>
+
+
+
+
     <script src="../js/custom-select.js"></script>
     <script src="../js/overlay-close.js"></script>
     <script>

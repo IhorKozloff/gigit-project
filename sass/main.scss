@@ -12,11 +12,13 @@
 @import "components/link";
 @import "components/month-of-year-select";
 @import "components/custom-select";
+@import "components/red-mark-after";
 
 //@import "pages/auth";
 @import "pages/browse";
 @import "pages/fav-item";
 @import "pages/calendar";
+@import "pages/message-page";
 
 
 
@@ -25,17 +27,20 @@
 
 @import "layout/sidebar";
 @import "layout/auth";
-
+@import "layout/sidebar-content";
 @import "layout/browse/header";
 @import "layout/browse/section-title";
 @import "layout/browse/section-popular";
 @import "layout/browse/footer";
-@import "layout/browse/favorite-artists";
 
 @import "layout/fav-item/fav-item-header";
 @import "layout/fav-item/fav-item-hero";
 @import "layout/fav-item/fav-item-gallery";
 @import "layout/fav-item/fav-item-about";
+
+
+@import "layout/message/section-chat";
+@import "layout/message/section-details";
 
 
 

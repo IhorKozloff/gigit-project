@@ -1,0 +1,83 @@
+.section-chat {
+    &__form {
+        width: 100%;
+        ul{
+            width: 100%;
+        }
+        li {
+            width: 100%;
+        }
+    }
+    &__chat-list {
+        max-width: 32rem;
+        &.complited {
+            border-bottom: none;
+            .message-page__chat-item-name {
+                color: $color-grey-1;
+            }
+        }
+        border-bottom: 1px solid $color-grey-light-1;
+        padding: 1.6rem 0;
+        @media screen and (min-width: 1440px) {
+            width: 32rem;
+        }
+    }
+
+    &__chat-item {
+        padding: 0.8rem;
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 1.6rem;
+        line-height: 1.5;
+        font-weight: 500;
+        transition: all 250ms;
+
+        &.active {
+            background-color: $color-grey-dark;
+            pointer-events: none;
+            span {
+                color: $color-white;
+            }
+        }
+        &:hover {
+            background-color: rgba($color-grey-dark, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    &__chat-item-logo {
+        position: relative;
+        font-size: 1.6rem;
+        width: 4rem;
+        height: 4rem;
+        background-color: $color-grey-light-2;
+        @include flex-center;
+        border-radius: 50%;
+        svg {
+            width: 2.4rem;
+            height: 2.4rem;
+            fill: $color-grey-1;
+        }
+    }
+
+    &__chat-item-text-wrapper {
+        span {
+            display: block;
+        }
+    }
+    &__chat-item-name {
+        font-size: 1.4rem;
+    }
+    &__chat-item-date {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $color-grey-1;
+    }
+}

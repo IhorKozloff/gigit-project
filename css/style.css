@@ -61,7 +61,8 @@ body {
 .layout-container {
   max-width: 144rem;
   margin: 0 auto;
-  display: flex; }
+  display: flex;
+  height: 100%; }
 
 ul {
   list-style: none; }
@@ -140,6 +141,9 @@ button {
 
 .button-large--secondary::after {
   background-color: #FFF; }
+
+.button-large--increased:hover::after {
+  transform: translateX(400px) skewX(-45deg); }
 
 .close-btn {
   display: flex;
@@ -383,11 +387,15 @@ button {
 .book-form__time-set {
   display: flex; }
 
-.link {
+.link,
+.link:visited,
+.link:link {
   display: inline-block;
   position: relative;
   transition: color 500ms; }
-  .link::after {
+  .link::after,
+  .link:visited::after,
+  .link:link::after {
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -397,9 +405,13 @@ button {
     background-color: #38F094;
     opacity: 0;
     transition: all 500ms; }
-  .link:hover {
+  .link:hover,
+  .link:visited:hover,
+  .link:link:hover {
     color: #38F094; }
-    .link:hover::after {
+    .link:hover::after,
+    .link:visited:hover::after,
+    .link:link:hover::after {
       transform: translateY(-10px);
       opacity: 1; }
 
@@ -486,6 +498,24 @@ button {
 
 .custom-select.active svg {
   transform: translate(-50%, -50%) rotateX(180deg); }
+
+.red-mark-after::after {
+  content: '1';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'TTNorms', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 500;
+  width: 1.4rem;
+  height: 1.4rem;
+  color: #FFF;
+  background-color: #FF2200;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
 
 .content-container {
   flex-basis: 101.6rem;
@@ -626,6 +656,11 @@ button {
   .calendar-page__modal-window-heading {
     margin-bottom: 3.6rem; }
 
+.message-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%; }
+
 .sidebar {
   min-height: 100vh;
   background-color: #12141D;
@@ -648,30 +683,14 @@ button {
     flex-grow: 1;
     padding-top: 2.4rem;
     border-top: 1px solid #3A3C45;
-    margin-top: 2.4rem; }
+    margin-top: 2.4rem;
+    margin-bottom: 39rem; }
     .sidebar__navigation-list {
       display: flex;
       flex-direction: column;
       gap: 2.4rem; }
       .sidebar__navigation-list li:nth-child(4) {
         position: relative; }
-        .sidebar__navigation-list li:nth-child(4)::after {
-          content: '1';
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-family: 'TTNorms', sans-serif;
-          font-size: 1rem;
-          line-height: 1.2;
-          font-weight: 500;
-          width: 1.4rem;
-          height: 1.4rem;
-          color: #FFF;
-          background-color: #FF2200;
-          border-radius: 50%;
-          position: absolute;
-          bottom: 0;
-          right: 0; }
   .sidebar__link {
     color: #8B929A; }
     .sidebar__link:hover, .sidebar__link:active {
@@ -716,6 +735,23 @@ button {
     position: absolute;
     top: 3.2rem;
     right: 3.2rem; }
+
+.sidebar-content {
+  padding: 4rem 3.2rem 0;
+  background-color: #F7F8F9; }
+  .sidebar-content__header {
+    height: 5.8rem;
+    display: flex;
+    gap: 4.8rem;
+    padding-bottom: 2.6rem;
+    align-items: flex-end;
+    border-bottom: 1px solid #D4DAE1; }
+  .sidebar-content a:link,
+  .sidebar-content a:visited {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #697077; }
 
 .header {
   height: 7rem;
@@ -783,40 +819,6 @@ button {
 
 .section-popular {
   padding-bottom: 5.7rem; }
-
-.favorite-artists {
-  padding: 4rem 3.2rem 0;
-  background-color: #F7F8F9; }
-  .favorite-artists__header {
-    height: 5.8rem;
-    display: flex;
-    gap: 4.8rem;
-    padding-bottom: 2.6rem;
-    align-items: flex-end;
-    border-bottom: 1px solid #D4DAE1; }
-  .favorite-artists__link:link, .favorite-artists__link:visited {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    font-weight: 500;
-    color: #697077;
-    position: relative;
-    transition: all 250ms; }
-    .favorite-artists__link:link::after, .favorite-artists__link:visited::after {
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: #38F094;
-      opacity: 0;
-      transition: all 500ms; }
-    .favorite-artists__link:link:hover, .favorite-artists__link:visited:hover {
-      color: #38F094;
-      transform: translateY(-3px); }
-      .favorite-artists__link:link:hover::after, .favorite-artists__link:visited:hover::after {
-        transform: translateY(-10px);
-        opacity: 1; }
 
 .fav-item-header {
   flex-basis: auto;
@@ -991,3 +993,123 @@ button {
 
 .fav-item-about__details-title {
   font-weight: 600; }
+
+.section-chat__form {
+  width: 100%; }
+  .section-chat__form ul {
+    width: 100%; }
+  .section-chat__form li {
+    width: 100%; }
+
+.section-chat__chat-list {
+  max-width: 32rem;
+  border-bottom: 1px solid #D4DAE1;
+  padding: 1.6rem 0; }
+  .section-chat__chat-list.complited {
+    border-bottom: none; }
+    .section-chat__chat-list.complited .message-page__chat-item-name {
+      color: #697077; }
+  @media screen and (min-width: 1440px) {
+    .section-chat__chat-list {
+      width: 32rem; } }
+
+.section-chat__chat-item {
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 1.6rem;
+  line-height: 1.5;
+  font-weight: 500;
+  transition: all 250ms; }
+  .section-chat__chat-item.active {
+    background-color: #3A3C45;
+    pointer-events: none; }
+    .section-chat__chat-item.active span {
+      color: #FFF; }
+  .section-chat__chat-item:hover {
+    background-color: rgba(58, 60, 69, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1); }
+  .section-chat__chat-item:not(:last-child) {
+    margin-bottom: 0.8rem; }
+
+.section-chat__chat-item-logo {
+  position: relative;
+  font-size: 1.6rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #EFF0F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; }
+  .section-chat__chat-item-logo svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: #697077; }
+
+.section-chat__chat-item-text-wrapper span {
+  display: block; }
+
+.section-chat__chat-item-name {
+  font-size: 1.4rem; }
+
+.section-chat__chat-item-date {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #697077; }
+
+.section-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 3.2rem; }
+  .section-details__list {
+    margin-bottom: 3.2rem; }
+  .section-details__item {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center; }
+    .section-details__item:not(:last-child) {
+      margin-bottom: 2.4rem; }
+  .section-details__item-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: #8B929A; }
+  .section-details__item-text {
+    font-size: 1.4rem;
+    line-height: 1.5; }
+  .section-details__button-set {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; }
+  .section-details .button-large.button-large--secondary {
+    color: #FF715B; }
+    .section-details .button-large.button-large--secondary:hover {
+      color: #FFF; }
+  .section-details .button-large.button-large--primary {
+    color: #FFF; }
+
+.status-mark {
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #F09A1A;
+  border-radius: 1.6rem;
+  padding: 0.7rem 1.2rem 0.7rem 2.7rem;
+  background-color: rgba(240, 154, 26, 0.1);
+  position: relative; }
+  .status-mark::after {
+    content: '';
+    position: absolute;
+    background-color: #F09A1A;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    left: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%); }
