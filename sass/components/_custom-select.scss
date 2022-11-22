@@ -1,0 +1,73 @@
+.custom-select {
+    border: 1px solid $color-grey-light-1;
+    padding: 1.3rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: $color-black;
+
+    &__list {
+        position: absolute;
+        width: 100%;
+        height: 150%;
+        left: 0;
+        top: 110%;
+        background-color: $color-white;
+        border-radius: 6px;
+        border: 1px solid $color-grey-light-1;
+        transform: translateY(0px);
+        overflow-y: scroll;
+        opacity: 0;
+        transition: opacity 250ms;
+        pointer-events: none;
+    }
+
+  
+    &__item {
+        padding: 0.5rem 1.6rem;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-grey-light-2;
+        }
+    }
+    &__button {
+        color: $color-grey-2;
+        transition: all 250ms;
+        width: 2.4rem;
+        height: 2.4rem;
+        position: relative;
+
+        &:hover {
+            transform: scale(1.1);
+            color: $color-black;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            fill: currentColor;
+            transition: all 250ms;
+            pointer-events: none;
+        }
+
+    }
+    
+}
+
+.custom-select.active {
+
+    .custom-select__list {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    svg {
+        transform: translate(-50%, -50%) rotateX(180deg);
+    }
+}

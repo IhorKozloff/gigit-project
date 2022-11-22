@@ -7,7 +7,7 @@
     background-color: $color-black;
     opacity: 0;
     pointer-events: none;
-    
+    transition: opacity 500ms;
 
     &__content-container {
         position: absolute;

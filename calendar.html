@@ -258,8 +258,15 @@
     
         
     </div>
-    <div class="overlay overlay-grey">
+    <div class="overlay overlay-grey active">
         <div class="overlay__content-container">
+            <div class="auth-page__close-btn-wrapper">
+                <button type="button" class="close-btn">
+                    <svg class="close-btn__icon">
+                        <use href="img/sprite.svg#icon-Close"></use>
+                    </svg>
+                </button>
+            </div>
             <div class="calendar-page__modal-window">
                 <h1 class="heading-1 calendar-page__modal-window-heading">Book a gig</h1>
                 <form class="book-form">
@@ -281,26 +288,73 @@
                             </svg>
                         </li>
                         <li class="book-form__inputs-item">
-                            <div class="book-form__time-set">
-                                <select class="book-form__time-select"></select>
-                                -
-                                <select class="book-form__time-select"></select>
-                            </div>
+                            <ul class="book-form__time-set">
+                                
+                                    <li class="book-form__time-set-item">
+                                        <div class="custom-select"> 
+                                            <p class="custom-select__current-text"><span class="custom-select__current-value">8</span>:00 pm</p>
+                                            <button type="button" class="custom-select__button">
+                                                <svg class="custom-select__button-icon">
+                                                    <use href="img/sprite.svg#icon-Chevron-Down"></use>
+                                                </svg>
+                                            </button>
+                                            <ul class="custom-select__list">
+                                                <li class="custom-select__item" data-timeValue="8">8:00 pm</li>
+                                                <li class="custom-select__item" data-timeValue="9">9:00 pm</li>
+                                                <li class="custom-select__item" data-timeValue="10">10:00 pm</li>
+                                                <li class="custom-select__item" data-timeValue="11">11:00 pm</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="book-form__time-set-item">
+                                        <span class="book-form__time-set-separator">-</span>
+                                    </li>
+                                
+                                    <li class="book-form__time-set-item">
+                                        <div class="custom-select"> 
+                                            <p class="custom-select__current-text"><span class="custom-select__current-value">8</span>:00 pm</p>
+                                            <button type="button" class="custom-select__button">
+                                                <svg class="custom-select__button-icon">
+                                                    <use href="img/sprite.svg#icon-Chevron-Down"></use>
+                                                </svg>
+                                            </button>
+                                            <ul class="custom-select__list">
+                                                <li class="custom-select__item" data-timeValue="8">8:00 pm</li>
+                                                <li class="custom-select__item" data-timeValue="9">9:00 pm</li>
+                                                <li class="custom-select__item" data-timeValue="10">10:00 pm</li>
+                                                <li class="custom-select__item" data-timeValue="11">11:00 pm</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                
+                            </ul>
                         </li>
                     </ul>
-                    <div class="book-form__total-price">
+                    <div class="book-form__total-price margin-bottom-largest">
                         <span class="book-form__total-price-title">Price</span>
                         <span class="book-form__total-price-value">$200.00</span>
                     </div>
 
                     <div class="book-form__button-set">
                         <a href="#" class="button-large button-large--primary">Send request</a>
-                        <button type="button" class="link">Cancel</button>
+                        <button type="button" class="link book-form__button-set-link">Cancel</button>
                     </div>
                 </form>
             </div>
             
         </div>
     </div>
+    <script src="../js/custom-select.js"></script>
+    <script src="../js/overlay-close.js"></script>
+    <script>
+        const calendarItemSet = document.querySelectorAll('.section-calendar__days-item');
+        calendarItemSet.forEach(item => {
+            item.addEventListener('click', ()=> {
+                document.querySelector('.overlay').classList.add('active');
+            })
+        })
+    </script>
+
 </body>
 </html>

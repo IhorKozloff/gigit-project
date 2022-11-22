@@ -259,7 +259,8 @@ button {
   right: 0;
   background-color: #12141D;
   opacity: 0;
-  pointer-events: none; }
+  pointer-events: none;
+  transition: opacity 500ms; }
   .overlay__content-container {
     position: absolute;
     top: 50%;
@@ -301,6 +302,86 @@ button {
 
 .auth-form li:not(:last-child) {
   margin-bottom: 3.2rem; }
+
+.book-form__inputs-item {
+  position: relative;
+  color: #8B929A;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500; }
+  .book-form__inputs-item svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    fill: currentColor; }
+
+.book-form__inputs-item {
+  margin-bottom: 3.2rem; }
+
+.book-form__input-label {
+  font-size: 1.4rem;
+  color: #12141D; }
+
+.book-form__input {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 1.6rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  border: none;
+  border: 1px solid #D4DAE1;
+  margin-top: 1.2rem; }
+
+.book-form__price-mark {
+  position: absolute;
+  display: block;
+  bottom: 1.3rem;
+  right: 0;
+  transform: translateX(-1.6rem); }
+
+.book-form__time-set {
+  width: 100%;
+  display: flex;
+  align-items: center; }
+
+.book-form__time-set-item {
+  flex-grow: 1; }
+  .book-form__time-set-item:nth-child(2) {
+    flex-grow: 0; }
+
+.book-form__time-set-separator {
+  flex-grow: 0;
+  margin-left: 8px;
+  margin-right: 8px; }
+
+.book-form__total-price span {
+  display: block; }
+
+.book-form__total-price-title {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 4px; }
+
+.book-form__total-price-value {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 500; }
+
+.book-form__button-set {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center; }
+  .book-form__button-set .button-large {
+    background-color: #FF715B;
+    width: 20rem; }
+  .book-form__button-set-link {
+    color: #FF715B; }
+
+.book-form__time-set {
+  display: flex; }
 
 .link {
   display: inline-block;
@@ -350,6 +431,61 @@ button {
     font-size: 1.4rem;
     line-height: 1.5;
     font-weight: 500; }
+
+.custom-select {
+  border: 1px solid #D4DAE1;
+  padding: 1.3rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #12141D; }
+  .custom-select__list {
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    left: 0;
+    top: 110%;
+    background-color: #FFF;
+    border-radius: 6px;
+    border: 1px solid #D4DAE1;
+    transform: translateY(0px);
+    overflow-y: scroll;
+    opacity: 0;
+    transition: opacity 250ms;
+    pointer-events: none; }
+  .custom-select__item {
+    padding: 0.5rem 1.6rem;
+    cursor: pointer; }
+    .custom-select__item:hover {
+      background-color: #EFF0F2; }
+  .custom-select__button {
+    color: #8B929A;
+    transition: all 250ms;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative; }
+    .custom-select__button:hover {
+      transform: scale(1.1);
+      color: #12141D; }
+    .custom-select__button svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      fill: currentColor;
+      transition: all 250ms;
+      pointer-events: none; }
+
+.custom-select.active .custom-select__list {
+  opacity: 1;
+  pointer-events: all; }
+
+.custom-select.active svg {
+  transform: translate(-50%, -50%) rotateX(180deg); }
 
 .content-container {
   flex-basis: 101.6rem;
@@ -485,7 +621,7 @@ button {
 
 .calendar-page__modal-window {
   background-color: #FFF;
-  max-width: 56rem;
+  width: 56rem;
   padding: 5.6rem 8rem; }
   .calendar-page__modal-window-heading {
     margin-bottom: 3.6rem; }

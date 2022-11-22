@@ -1,33 +1,96 @@
 .book-form {
-    &__inputs-list {
-        li {
-            svg {
 
-            }
+    &__inputs-item {
+        position: relative;
+        color: $color-grey-2;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-weight: 500;
+        
+        svg {
+            width: 2.4rem;
+            height: 2.4rem;
+            position: absolute;
+            bottom: 1.2rem;
+            right: 1.2rem;
+            fill: currentColor;
         }
     }
-    &__input-label {
 
+    &__inputs-item {
+        margin-bottom: 3.2rem;
+    }
+
+    &__input-label {
+        font-size: 1.4rem;
+        color: $color-black;
     }
     &__input {
-        
+        display: block;
+        width: 100%;
+        padding: 1.3rem 1.6rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-weight: 500;
+        border: none;
+        border: 1px solid $color-grey-light-1;
+        margin-top: 1.2rem;
     }
     &__price-mark {
-
+        position: absolute;
+        display: block;
+        bottom: 1.3rem;
+        right: 0;
+        transform: translateX(-1.6rem);
     }
-    &__total-price {
-        &-title {
+    &__time-set {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    &__time-set-item {
+        flex-grow: 1;
+        &:nth-child(2) {
+            flex-grow: 0;
+        }
+    }
+ 
+    &__time-set-separator {
+        flex-grow: 0;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 
+    &__total-price {
+        span {
+            display: block;
+        }
+        &-title {
+            font-size: 1.4rem;
+            line-height: 1.5;
+            margin-bottom: 4px;
         }
         &-value {
-
+            font-size: 1.8rem;
+            line-height: 1.5;
+            font-weight: 500;
         }
     }
     &__button-set {
+        display: flex;
+        gap: 3.2rem;
+        align-items: center;
 
         & .button-large {
-            color: black;
             background-color: $color-coral;
+            width: 20rem;
         }
+        &-link {
+            color: $color-coral;
+        }
+    }
+    
+    &__time-set {
+        display: flex;
     }
 }
