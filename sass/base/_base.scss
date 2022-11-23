@@ -28,10 +28,11 @@ body {
     font-family: $primary-font;
     font-weight: 400;
     color: $color-black;
+    min-height: 100vh;
 }
 .layout-container {
     width: 100vw;
-    
+    min-height: 100vh;
     display: flex;
     height: 100%;
     @media screen and (min-width: 1440px) {
