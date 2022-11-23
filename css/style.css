@@ -52,6 +52,18 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media screen and (max-width: 1439px) {
+    html {
+      font-size: 50%; } }
+  @media screen and (max-width: 1150px) {
+    html {
+      font-size: 50%; } }
+  @media screen and (max-width: 899px) {
+    html {
+      font-size: 35%; } }
+  @media screen and (max-width: 664px) {
+    html {
+      font-size: 15%; } }
 
 body {
   font-family: "Inter", sans-serif;
@@ -164,18 +176,19 @@ button {
   display: flex;
   gap: 2rem; }
   .artists-list__item {
-    flex-basis: 29.6rem;
+    flex-basis: calc((100% - 4rem) / 3);
     overflow: hidden; }
     .artists-list__item:hover {
       box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.1); }
       .artists-list__item:hover img {
         transform: scale(1.1); }
+    @media screen and (min-width: 1440px) {
+      .artists-list__item {
+        flex-basis: 29.6rem; } }
   .artists-list__link:link, .artists-list__link:visited {
     color: inherit; }
   .artists-list__logo {
     background-color: #F6F8F9;
-    width: 29.6rem;
-    height: 29.6rem;
     margin-bottom: 1.6rem;
     overflow: hidden; }
   .artists-list__logo-img {
@@ -194,16 +207,20 @@ button {
     font-size: 1.2rem;
     color: #697077; }
   .artists-list.artists-list--small .artists-list__item {
-    flex-basis: 13.8rem; }
+    flex-basis: calc((100% - 10rem) / 5); }
+    @media screen and (min-width: 1440px) {
+      .artists-list.artists-list--small .artists-list__item {
+        flex-basis: 13.8rem; } }
   .artists-list.artists-list--small .artists-list__logo {
-    width: 13.8rem;
-    height: 13.8rem;
     margin-bottom: 1.2rem; }
   .artists-list.artists-list-round-items {
     gap: 1.6rem; }
     .artists-list.artists-list-round-items .artists-list__item {
-      flex-basis: 10.2rem;
+      flex-basis: calc((100% - 11.2rem) / 8);
       transition: all 250ms; }
+      @media screen and (min-width: 900px) {
+        .artists-list.artists-list-round-items .artists-list__item {
+          flex-basis: 10.2rem; } }
       .artists-list.artists-list-round-items .artists-list__item:hover {
         transform: translateY(-4px);
         box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.1);
@@ -782,7 +799,6 @@ button {
   grid-template-columns: 32rem 1fr 34.4rem; }
 
 .sidebar {
-  min-height: 100vh;
   background-color: #12141D;
   padding: 3.2rem 2rem 2.4rem;
   display: flex;
@@ -858,11 +874,12 @@ button {
 
 .sidebar-content {
   padding: 0 3.2rem 2.6rem 3.2rem;
-  background-color: #F7F8F9; }
+  background-color: #F7F8F9;
+  max-width: 34.4rem; }
   .sidebar-content__header {
     height: 9.8rem;
     display: flex;
-    gap: 4.8rem;
+    gap: 4.7rem;
     padding-bottom: 2.4rem;
     align-items: flex-end;
     border-bottom: 1px solid #D4DAE1; }
@@ -932,6 +949,10 @@ button {
       background-image: url("../img/artists/title-wallpaper/artist-primary-nirvana-x2.png"); } }
   .section-title__text-wrapper {
     width: 62%; }
+    @media screen and (max-width: 1000px) {
+      .section-title__text-wrapper {
+        text-align: center;
+        width: 50%; } }
   .section-title__description {
     margin-top: 1.6rem;
     font-size: 1.4rem;

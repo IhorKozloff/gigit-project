@@ -25,6 +25,11 @@
 
     &__text-wrapper {
         width: 62%;
+        @media screen and (max-width: 1000px) {
+            text-align: center;
+            width: 50%;
+        }
+        
     }
     &__description {
         margin-top: 1.6rem;

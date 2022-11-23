@@ -3,7 +3,8 @@
     gap: 2rem;
 
     &__item {
-        flex-basis: 29.6rem;
+        flex-basis: calc((100% - 4rem) / 3);
+
         overflow: hidden;
 
         &:hover {
@@ -14,7 +15,10 @@
                 transform: scale(1.1);
             }
         }
-       
+        @media screen and (min-width: 1440px) {
+            flex-basis: 29.6rem;
+        }
+  
     }
 
     &__link:link,
@@ -24,8 +28,8 @@
     }
     &__logo {
         background-color: #F6F8F9;
-        width: 29.6rem;
-        height: 29.6rem;
+        // width: 29.6rem;
+        // height: 29.6rem;
         margin-bottom: 1.6rem;
         overflow: hidden;
     }
@@ -54,11 +58,15 @@
 
     &.artists-list--small {
         .artists-list__item {
-            flex-basis: 13.8rem;
+            flex-basis: calc((100% - 10rem) / 5);
+            
+            @media screen and (min-width: 1440px) {
+                flex-basis: 13.8rem;
+            }
         }
         .artists-list__logo {
-            width: 13.8rem;
-            height: 13.8rem;
+            // width: 13.8rem;
+            // height: 13.8rem;
             margin-bottom: 1.2rem;
         }
 
@@ -68,7 +76,11 @@
         gap: 1.6rem;
 
         .artists-list__item {
-            flex-basis: 10.2rem;
+            flex-basis: calc((100% - 11.2rem) / 8);
+            
+            @media screen and (min-width: 900px) {
+                flex-basis: 10.2rem;
+            }
             transition: all 250ms;
             &:hover {
                 transform: translateY(-4px) ;
@@ -78,6 +90,7 @@
                     transform: scale(1);
                 }
             }
+           
         }
         .artists-list__logo {
             width: 6rem;
