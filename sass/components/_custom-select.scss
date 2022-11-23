@@ -1,4 +1,5 @@
 .custom-select {
+    width: 100%;
     border: 1px solid $color-grey-light-1;
     padding: 1.3rem 1.6rem;
     display: flex;
@@ -24,6 +25,7 @@
         opacity: 0;
         transition: opacity 250ms;
         pointer-events: none;
+        z-index: 100;
     }
 
   

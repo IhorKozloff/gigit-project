@@ -1,0 +1,26 @@
+.section-messages {
+    padding: 3.2rem 4.4rem;
+    background-color: $color-grey-light-3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__header {
+        margin-bottom: auto;
+        height: 6.6rem;
+        padding-bottom: 2.4rem;
+        align-items: flex-end;
+        border-bottom: 1px solid $color-grey-light-1;
+    }
+
+    &__system-text {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        color: $color-grey-1;
+        margin: 0 auto;
+    }
+    & .header__form-list {
+        display: block;
+    }
+
+}

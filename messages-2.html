@@ -175,9 +175,14 @@
                         <h1 class="heading-1">You & Nirvana</h1> 
                     </header>
 
-                    <p class="section-messages__system-text margin-bottom-medium">Muso accepted your invitation</p>
+                    
 
-                    <ul class="messages-list margin-bottom-large-44px">
+                    <ul class="messages-list">
+
+                        <li class="messages-list__item messages-list__item--system">
+                            <p class="section-messages__system-text">Today</p>
+                        </li>
+
                         <li class="messages-list__item messages-list__item--user">
 
                             <div class="messages-list__logo">TR</div>
@@ -206,14 +211,18 @@
                             
                         </li>
 
+                        <li class="messages-list__item messages-list__item--system">
+                            <p class="section-messages__system-text">Muso accepted your invitation</p>
+                        </li>
 
-
-                   
+                        <li class="messages-list__item messages-list__item--system">
+                            <p class="section-messages__system-text">You paid for the gig. The money will be transferred to the musicians 3 days after the gig</p>
+                        </li>
                     </ul>
                     
                     <form action="#" class="header__form">
                         <ul class="header__form-list">
-                            <li class="header__form-item">
+                            <li class="header__form-item ">
                                 <input type="text" class="header__input" placeholder="Type your message">
                                 <button type="button" class="header__form-btn">
                                     <svg class="header__form-icon">
@@ -233,7 +242,7 @@
                     </header>
                     
                         <div class="section-details__inform">
-                            <span class="status-mark status-mark--orange margin-bottom-large">Booked and Paid</span>
+                            <span class="status-mark status-mark--blue margin-bottom-large">Booked. Waiting for payment</span>
 
                             <ul class="section-details__list">
                                 <li class="section-details__item">
@@ -265,7 +274,7 @@
                         </div>
                     
                         <div class="section-details__button-set">
-                            <a href="#" class="button-large button-large--primary button-large--increased" id="message-page-cta-btn">Pay for Gig</a>
+                            <a href="messages-3.html" class="button-large button-large--primary button-large--increased" id="message-page-cta-btn">Gig is Complete</a>
                             <a href="#" class="button-large button-large--secondary button-large--increased">Cancel the Gig</a>
                         </div>
                 </section>
@@ -274,80 +283,6 @@
 
     </div>
 
-    
-    <div class="overlay overlay-grey">
-        <div class="overlay__content-container">
-            <div class="auth-page__close-btn-wrapper">
-                <button type="button" class="close-btn">
-                    <svg class="close-btn__icon">
-                        <use href="img/sprite.svg#icon-Close"></use>
-                    </svg>
-                </button>
-            </div>
-            
-            <div class="payment">
-                <h1 class="heading-1">Pay for Gig</h1>
-                <ul class="payment__details-list">
-                    <li class="payment__details-item">
-                        <span class="payment__details-title">Band</span>
-                        <span class="payment__details-value">Nirvana</span>
-                    </li>
-                    <li class="payment__details-item">
-                        <span class="payment__details-title">When</span>
-                        <span class="payment__details-value">Thursday, June 16</span>
-                    </li>
-                    <li class="payment__details-item">
-                        <span class="payment__details-title">Time</span>
-                        <span class="payment__details-value">9:00 – 11:00 pm</span>
-                    </li>
-                    <li class="payment__details-item">
-                        <span class="payment__details-title">Price</span>
-                        <span class="payment__details-value">$200.00</span>
-                    </li>
-                </ul>
-                <form class="payment__form">
-                    <p class="payment__form-title">Subscription</p>
-                    <div class="custom-select"> 
-                        <p class="custom-select__current-text"><span class="custom-select__current-value">Select an option</span></p>
-                        <button type="button" class="custom-select__button">
-                            <svg class="custom-select__button-icon">
-                                <use href="img/sprite.svg#icon-Chevron-Down"></use>
-                            </svg>
-                        </button>
-                        <ul class="custom-select__list">
-                            <li class="custom-select__item" data-timeValue="($50/gig, 1 gig)">($50/gig, 1 gig)</li>
-                            <li class="custom-select__item" data-timeValue="Explorer ($120/month, 4 gigs)"><strong>Explorer</strong> ($120/month, 4 gigs)</li>
-                            <li class="custom-select__item" data-timeValue="Weekender ($160/month, 8 gigs)"><strong>Weekender</strong> ($160/month, 8 gigs)</li>
-                            <li class="custom-select__item" data-timeValue="All In ($200/month, Unlimited gigs)"><strong>All In</strong> ($200/month, Unlimited gigs)</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="book-form__button-set payment__button-set">
-                        <a href="messages-2.html" class="button-large button-large--primary">Chekout</a>
-                        <button type="button" class="link book-form__button-set-link" id="cancel-form">Cancel</button>
-                    </div>
-                </form>
-            </div>
-            
-        </div>
-    </div>
-
-
-
-
-    <script src="../js/custom-select.js"></script>
-    <script src="../js/overlay-close.js"></script>
-    <script>
-        const ctaBtnEl = document.querySelector('#message-page-cta-btn');
-        const cancelFormEl = document.querySelector('#cancel-form')
-
-        ctaBtnEl.addEventListener('click', () => {
-            document.querySelector('.overlay').classList.add('active');
-        });
-        cancelFormEl.addEventListener('click', () => {
-            document.querySelector('.overlay').classList.remove('active');
-        });
-    </script>
 
 </body>
 </html>

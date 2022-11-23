@@ -1,7 +1,8 @@
 .message-page {
+    flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  
-    height: 100%;
+    grid-template-columns: 32rem 1fr 34.4rem;  
+    
 }
 
 

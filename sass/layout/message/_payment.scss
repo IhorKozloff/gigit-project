@@ -1,0 +1,60 @@
+.payment {
+    background-color: $color-white;
+    padding: 5.6rem 8rem;
+    width: 56rem;
+    //max-height: 90vh;
+    //overflow-y: scroll;
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    &__details-list {
+        margin-top: 4rem;
+
+    }
+    &__details-item {
+        &:not(:first-child) {
+            margin-top: 2.4rem;
+        }
+        span {
+            display: block;
+            &:not(:first-child) {
+                margin-top: 0.4rem;
+            }
+        }
+
+    }
+    &__details-title {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+    &__details-value {
+        font-size: 2.4rem;
+        line-height: 1.3;
+        font-weight: 500;
+    }
+    &__form {
+        margin-top: 2.4rem;
+
+        &-title {
+            margin-bottom: 1.2rem;
+            font-size: 1.4rem;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+    }
+    &__button-set {
+        margin-top: 16.5rem;
+        position: relative;
+        z-index: 1;
+    }
+    & .custom-select__list {
+        height: 390%;
+        overflow: auto;
+    }
+    & .custom-select__item {
+        padding-top: 1.2rem;
+        padding-bottom: 1.3rem;
+    }
+}

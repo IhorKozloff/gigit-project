@@ -50,6 +50,7 @@
     }
     &__time-set-item {
         flex-grow: 1;
+
         &:nth-child(2) {
             flex-grow: 0;
         }
@@ -88,9 +89,5 @@
         &-link {
             color: $color-coral;
         }
-    }
-    
-    &__time-set {
-        display: flex;
     }
 }

@@ -1,4 +1,5 @@
 .section-chat {
+    background-color: $color-white;
     &__form {
         width: 100%;
         ul{
@@ -9,7 +10,7 @@
         }
     }
     &__chat-list {
-        max-width: 32rem;
+        width: 100%;
         &.complited {
             border-bottom: none;
             .message-page__chat-item-name {
@@ -18,9 +19,10 @@
         }
         border-bottom: 1px solid $color-grey-light-1;
         padding: 1.6rem 0;
-        @media screen and (min-width: 1440px) {
-            width: 32rem;
-        }
+
+        // @media screen and (min-width: 1440px) {
+        //     width: 32rem;
+        // }
     }
 
     &__chat-item {
@@ -37,8 +39,12 @@
         &.active {
             background-color: $color-grey-dark;
             pointer-events: none;
+
             span {
                 color: $color-white;
+            }
+            .section-chat__chat-item-logo {
+                background-color: $color-white;
             }
         }
         &:hover {

@@ -1,0 +1,103 @@
+.messages-list {
+    padding-bottom: 3.2rem;
+
+    &__item {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        max-width: 48rem;
+        display: flex;
+        gap: 0.8rem;
+        align-items: flex-start;
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__logo {
+        font-size: 0.96rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        flex-shrink: 0;
+        width: 2.4rem;
+        height: 2.4rem;
+        overflow: hidden;
+        @include flex-center;
+        border-radius: 50%;
+        background-color: $color-grey-light-2;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__content {
+        display: inline;
+        border-radius: 8px;
+        padding: 0.8rem 1.2rem 1.2rem 1.2rem;
+
+        &-name {
+            font-weight: 500;
+        }
+    }
+
+    &__item--user {
+        margin-left: auto;
+        justify-content: flex-end;
+        .messages-list__content {
+            border: 1px solid $color-grey-light-1;
+            order: -1;
+        }
+        .messages-list__content-name {
+            color: $color-coral;
+        }
+    }
+    &__item--respondent {
+        margin-right: auto;
+        .messages-list__content {
+            background-color: $color-white;
+        }
+        .messages-list__content-name {
+            color: $color-green-dark;
+        }
+    }
+    &__item--system {
+        max-width: 31.4rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__content-file {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        margin-top: 1rem;
+
+        &-logo {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: $color-grey-light-2;
+            @include flex-center;
+        }
+        &-icon {
+            width: 2.4rem;
+            height: 2.4rem;
+            fill: $color-grey-2;
+        }
+        &-description {
+            font-size: 1.4rem;
+            line-height: 1.5;
+            span {
+                display: block;
+            }
+        }
+        &-link {
+            color: #2D70B2;
+            margin-bottom: 2px;
+        }
+        &-size {
+            font-size: 1.4rem;
+            color: #697077;
+        }
+    }
+}

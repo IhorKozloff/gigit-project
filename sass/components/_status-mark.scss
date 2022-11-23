@@ -1,0 +1,45 @@
+.status-mark {
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 500;
+    border-radius: 1.6rem;
+    padding: 0.7rem 1.2rem 0.7rem 2.7rem;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        left: 1.2rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    
+   
+}
+.status-mark--orange {
+    color: #F09A1A;
+    background-color: rgba(240, 154, 26, 0.1);
+}
+.status-mark--orange::after {
+    background-color: #F09A1A;
+}
+
+.status-mark--blue {
+    color: #4169D1;
+    background-color: #ECF1FF;
+}
+.status-mark--blue::after {
+    background-color:#4169D1;
+}
+.status-mark--green {
+    color: $color-green-dark;
+    background-color: rgba(18, 175, 109, 0.1);
+}
+.status-mark--green::after {
+    background-color:$color-green-dark;
+}
