@@ -71,10 +71,13 @@ body {
   color: #12141D; }
 
 .layout-container {
-  max-width: 144rem;
-  margin: 0 auto;
+  width: 100vw;
   display: flex;
   height: 100%; }
+  @media screen and (min-width: 1440px) {
+    .layout-container {
+      max-width: 144rem;
+      margin: 0 auto; } }
 
 ul {
   list-style: none; }
@@ -206,13 +209,15 @@ button {
   .artists-list__genre {
     font-size: 1.2rem;
     color: #697077; }
-  .artists-list.artists-list--small .artists-list__item {
-    flex-basis: calc((100% - 10rem) / 5); }
-    @media screen and (min-width: 1440px) {
-      .artists-list.artists-list--small .artists-list__item {
-        flex-basis: 13.8rem; } }
-  .artists-list.artists-list--small .artists-list__logo {
-    margin-bottom: 1.2rem; }
+  .artists-list.artists-list--small {
+    flex-wrap: wrap; }
+    .artists-list.artists-list--small .artists-list__item {
+      flex-basis: calc((100% - 4rem) / 3); }
+      @media screen and (min-width: 1440px) {
+        .artists-list.artists-list--small .artists-list__item {
+          flex-basis: 13.8rem; } }
+    .artists-list.artists-list--small .artists-list__logo {
+      margin-bottom: 1.2rem; }
   .artists-list.artists-list-round-items {
     gap: 1.6rem; }
     .artists-list.artists-list-round-items .artists-list__item {
@@ -657,6 +662,10 @@ button {
 .content-container {
   flex-basis: 101.6rem;
   padding: 2.8rem 4.4rem 0; }
+  @media screen and (max-width: 1439px) {
+    .content-container {
+      flex-grow: 1;
+      width: 100%; } }
 
 .fav-item-page__container {
   flex-basis: 136rem;

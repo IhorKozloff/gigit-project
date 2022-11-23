@@ -57,8 +57,9 @@
     }
 
     &.artists-list--small {
+        flex-wrap: wrap;
         .artists-list__item {
-            flex-basis: calc((100% - 10rem) / 5);
+            flex-basis: calc((100% - 4rem) / 3);
             
             @media screen and (min-width: 1440px) {
                 flex-basis: 13.8rem;
