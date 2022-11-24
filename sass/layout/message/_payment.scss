@@ -30,9 +30,13 @@
         line-height: 1.5;
     }
     &__details-value {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+    &__details-value--large {
         font-size: 2.4rem;
         line-height: 1.3;
-        font-weight: 500;
     }
     &__form {
         margin-top: 2.4rem;
