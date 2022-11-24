@@ -1302,9 +1302,12 @@ button {
     font-size: 1.4rem;
     line-height: 1.5; }
   .payment__details-value {
-    font-size: 2.4rem;
-    line-height: 1.3;
+    font-size: 1.8rem;
+    line-height: 1.5;
     font-weight: 500; }
+  .payment__details-value--large {
+    font-size: 2.4rem;
+    line-height: 1.3; }
   .payment__form {
     margin-top: 2.4rem; }
     .payment__form-title {
