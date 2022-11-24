@@ -103,8 +103,7 @@ button {
   transition: all 250ms ease; }
   .button-round svg, .button-round:link svg, .button-round:visited svg {
     width: 2.4rem;
-    height: 2.4rem;
-    fill: currentColor; }
+    height: 2.4rem; }
   .button-round:hover, .button-round:link:hover, .button-round:visited:hover {
     transform: translateY(-3px) scale(1.05); }
   .button-round:active, .button-round:link:active, .button-round:visited:active {
@@ -844,16 +843,21 @@ button {
       gap: 2.4rem; }
       .sidebar__navigation-list li:nth-child(4) {
         position: relative; }
-  .sidebar__link {
-    color: #8B929A; }
-    .sidebar__link:hover, .sidebar__link:active {
-      color: #12141D;
-      background-color: #38F094; }
-    .sidebar__link--active,
-    .sidebar__link--active a:link,
-    .sidebar__link--active a:visited {
-      background-color: #38F094;
-      color: #12141D; }
+  .sidebar__link svg {
+    fill: #8B929A;
+    transition: all 250ms; }
+  .sidebar__link:hover, .sidebar__link:active {
+    background-color: #38F094; }
+    .sidebar__link:hover svg, .sidebar__link:active svg {
+      fill: #12141D; }
+  .sidebar__link--active,
+  .sidebar__link--active a:link,
+  .sidebar__link--active a:visited {
+    background-color: #38F094; }
+    .sidebar__link--active svg,
+    .sidebar__link--active a:link svg,
+    .sidebar__link--active a:visited svg {
+      fill: #12141D; }
   .sidebar__menu-item:not(:first-child) {
     margin-top: 2.4rem; }
   .sidebar__menu-item:last-child {

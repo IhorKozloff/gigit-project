@@ -47,12 +47,18 @@
 
     &__link {
 
-        color: $color-grey-2;
+        svg {
+            fill: $color-grey-2;
+            transition: all 250ms;
+        }
+        
 
         &:hover,
         &:active {
-            color: $color-black;
             background-color: $color-green-light;
+            svg {
+                fill: $color-black;
+            }
         }
 
         &--active {
@@ -61,7 +67,9 @@
             a:link,
             a:visited {
                 background-color: $color-green-light;
-                color: $color-black;
+                svg {
+                    fill: $color-black;
+                }
             }
         }
         
