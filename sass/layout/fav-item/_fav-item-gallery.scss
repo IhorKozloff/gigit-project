@@ -1,13 +1,27 @@
 .gallery {
-    max-width: 36rem;
-
+    
+    width: 40%;
+    flex-grow: 1;
+    @media screen and (max-width: 388px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 1440px) {
+        max-width: 36rem;
+    }
+    
     &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 1px;
     }
     &__item {
-        flex-basis: 11.9rem;
+
+        flex-basis: ((100% - 2) / 3);
+
+        @media screen and (min-width: 1440px) {
+            flex-basis: 11.9rem;
+        }
+        
         height: auto;
         cursor: pointer;
         overflow: hidden;
