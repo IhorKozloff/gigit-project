@@ -21,9 +21,13 @@
             ;
             
     }
-
     @media screen and (max-width: 1439px) {
         background-size: cover;
         background-position: bottom left;
     }
+    @media screen and (max-width: 450px) {
+        background-size: contain;
+        background-position: center;
+    }
+    
 }

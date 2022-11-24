@@ -682,7 +682,7 @@ button {
   padding-left: 3.2rem;
   display: flex;
   gap: 8rem; }
-  @media screen and (max-width: 388px) {
+  @media screen and (max-width: 450px) {
     .flex-container {
       flex-direction: column; } }
 
@@ -1035,11 +1035,15 @@ button {
     .fav-item-hero {
       background-size: cover;
       background-position: bottom left; } }
+  @media screen and (max-width: 450px) {
+    .fav-item-hero {
+      background-size: contain;
+      background-position: center; } }
 
 .gallery {
   width: 40%;
   flex-grow: 1; }
-  @media screen and (max-width: 388px) {
+  @media screen and (max-width: 450px) {
     .gallery {
       width: 100%; } }
   @media screen and (min-width: 1440px) {
