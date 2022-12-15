@@ -1,130 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Gigit | on your own</title>
-</head>
-<body>
-    <div class="layout-container">
-        <aside class="sidebar">
-
-            <a href="browse.html" class="sidebar__button-home button-round">g</a>
-    
-    
-            <nav class="sidebar__navigation">
-    
-                
-    
-                <ul class="sidebar__navigation-list">
-                    
-                    <li class="sidebar__navigation-item">
-                        <a href="calendar.html" class="sidebar__link  sidebar__link--active button-round">
-                            <svg class="sidebar__navigation-icon">
-                                <use href="img/sprite.svg#icon-Calendar"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="sidebar__navigation-item">
-                        <a href="browse.html" class="sidebar__link button-round">
-                            <svg class="sidebar__navigation-icon">
-                                <use href="img/sprite.svg#icon-Music"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="sidebar__navigation-item">
-                        <a href="#" class="sidebar__link button-round">
-                            <svg class="sidebar__navigation-icon">
-                                <use href="img/sprite.svg#icon-Favorites-Default"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="sidebar__navigation-item red-mark-after">
-                        <a href="messages.html" class="sidebar__link button-round">
-                            <svg class="sidebar__navigation-icon">
-                                <use href="img/sprite.svg#icon-Messages"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="sidebar__navigation-item">
-                        <a href="#" class="sidebar__link button-round">
-                            <svg class="sidebar__navigation-icon">
-                                <use href="img/sprite.svg#icon-File-Invoice"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </nav>
-    
-            <div class="sidebar__menu">
-                <ul class="sidebar__menu-list">
-                    <li class="sidebar__menu-item">
-                        <button type="button" class="sidebar__link button-round">
-                            <svg class="sidebar__menu-icon">
-                                <use href="img/sprite.svg#icon-Bell"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="sidebar__menu-item">
-                        <button type="button" class="sidebar__link button-round">
-                            <svg class="sidebar__menu-icon">
-                                <use href="img/sprite.svg#icon-User"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="sidebar__menu-item">
-                        <button type="button" class="sidebar__link button-round">
-                            <svg class="sidebar__menu-icon">
-                                <use href="img/sprite.svg#icon-Arrow-Bar-Right"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-    
-        
-    
-        <div class="calendar-page"> 
-            <header class="calendar-page__header">
-                <h1 class="heading-1">Book a gig with Nirvana</h1>
-                <div class="month-of-year-select">
-                    <button class="month-of-year-select__button">
-                        <svg class="month-of-year-select__icon">
-                            <use href="img/sprite.svg#icon-Chevron-Left"></use>
-                        </svg>
-                    </button>
-                    <span class="month-of-year-select__date">
-                        June, 2022
-                    </span>
-                    <button class="month-of-year-select__button">
-                        <svg class="month-of-year-select__icon">
-                            <use href="img/sprite.svg#icon-Chevron-Right"></use>
-                        </svg>
-                    </button>
-                </div>
-            </header>
-            <main>
-                <section class="section-calendar">
-                    <ul class="section-calendar__head-list">
-                        <li class="section-calendar__head-item">mon</li>
-                        <li class="section-calendar__head-item">tue</li>
-                        <li class="section-calendar__head-item">wed</li>
-                        <li class="section-calendar__head-item">thu</li>
-                        <li class="section-calendar__head-item">fri</li>
-                        <li class="section-calendar__head-item">sat</li>
-                        <li class="section-calendar__head-item">sun</li>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Gigit | on your own</title>
+    </head>
+    <body>
+        <div class="layout-container">
+            <aside class="sidebar">
+                <a href="browse.html" class="sidebar__button-home button-round">g</a>
+                <nav class="sidebar__navigation">                     
+                    <ul class="sidebar__navigation-list">                 
+                        <li class="sidebar__navigation-item">
+                            <a href="calendar.html" class="sidebar__link  sidebar__link--active button-round">
+                                <svg class="sidebar__navigation-icon">
+                                    <use href="img/sprite.svg#icon-Calendar"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__navigation-item">
+                            <a href="browse.html" class="sidebar__link button-round">
+                                <svg class="sidebar__navigation-icon">
+                                    <use href="img/sprite.svg#icon-Music"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__navigation-item">
+                            <a href="#" class="sidebar__link button-round">
+                                <svg class="sidebar__navigation-icon">
+                                    <use href="img/sprite.svg#icon-Favorites-Default"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__navigation-item red-mark-after">
+                            <a href="messages.html" class="sidebar__link button-round">
+                                <svg class="sidebar__navigation-icon">
+                                    <use href="img/sprite.svg#icon-Messages"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__navigation-item">
+                            <a href="#" class="sidebar__link button-round">
+                                <svg class="sidebar__navigation-icon">
+                                    <use href="img/sprite.svg#icon-File-Invoice"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                    <ul class="section-calendar__days-list">
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">30</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">31</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">1</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">2</h3>
-                            <div class="section-calendar__note">
+                </nav>
+                <div class="sidebar__menu">
+                    <ul class="sidebar__menu-list">
+                        <li class="sidebar__menu-item">
+                            <button type="button" class="sidebar__link button-round">
+                                <svg class="sidebar__menu-icon">
+                                    <use href="img/sprite.svg#icon-Bell"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <button type="button" class="sidebar__link button-round">
+                                <svg class="sidebar__menu-icon">
+                                    <use href="img/sprite.svg#icon-User"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <button type="button" class="sidebar__link button-round">
+                                <svg class="sidebar__menu-icon">
+                                    <use href="img/sprite.svg#icon-Arrow-Bar-Right"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="calendar-page"> 
+                <header class="calendar-page__header">
+                    <h1 class="heading-1">Book a gig with Nirvana</h1>
+                    <div class="month-of-year-select">
+                        <button class="month-of-year-select__button">
+                            <svg class="month-of-year-select__icon">
+                                <use href="img/sprite.svg#icon-Chevron-Left"></use>
+                            </svg>
+                        </button>
+                        <span class="month-of-year-select__date">
+                            June, 2022
+                        </span>
+                        <button class="month-of-year-select__button">
+                            <svg class="month-of-year-select__icon">
+                                <use href="img/sprite.svg#icon-Chevron-Right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+                <main>
+                    <section class="section-calendar">
+                        <ul class="section-calendar__head-list">
+                            <li class="section-calendar__head-item">mon</li>
+                            <li class="section-calendar__head-item">tue</li>
+                            <li class="section-calendar__head-item">wed</li>
+                            <li class="section-calendar__head-item">thu</li>
+                            <li class="section-calendar__head-item">fri</li>
+                            <li class="section-calendar__head-item">sat</li>
+                            <li class="section-calendar__head-item">sun</li>
+                        </ul>
+                        <ul class="section-calendar__days-list">
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">30</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">31</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">1</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">2</h3>
+                                <div class="section-calendar__note">
+                                    <a href="#">
+                                        <div class="section-calendar__note note note--grey">
+                                            <span class="note__name">
+                                                Available
+                                            </span>
+                                            <span class="note__time">
+                                                8:00 pm – 11:00 pm
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">3</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">4</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">5</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">6</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">7</h3>
                                 <a href="#">
                                     <div class="section-calendar__note note note--grey">
                                         <span class="note__name">
@@ -135,164 +163,211 @@
                                         </span>
                                     </div>
                                 </a>
-                            </div>
-                        </li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">3</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">4</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">5</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">6</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item">
-                            <h3 class="heading-3--medium">7</h3>
-                            <a href="#">
-                                <div class="section-calendar__note note note--grey">
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">8</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">9</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">10</h3>
+                                <div class="section-calendar__note note note">
                                     <span class="note__name">
-                                        Available
+                                        The Who
                                     </span>
                                     <span class="note__time">
                                         8:00 pm – 11:00 pm
                                     </span>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">8</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">9</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item">
-                            <h3 class="heading-3--medium">10</h3>
-                            <div class="section-calendar__note note note">
-                                <span class="note__name">
-                                    The Who
-                                </span>
-                                <span class="note__time">
-                                    8:00 pm – 11:00 pm
-                                </span>
-                            </div>
-                        </li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">11</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">12</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">13</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item">
-                            <h3 class="heading-3--medium">14</h3>
-                            <ul class="note note-multiply">
-                                <li class="note-multiply__item">
-                                    <span class="note__name">
-                                        Bi-2
-                                    </span>
-                                    <span class="note-multiply__separator"></span>
-                                    <span class="note__time">
-                                        9:00 pm
-                                    </span>
-                                </li>
-                                <li class="note-multiply__item">
-                                    <span class="note__name">
-                                        Staind
-                                    </span>
-                                    <span class="note-multiply__separator"></span>
-                                    <span class="note__time">
-                                        11:00 pm
-                                    </span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">15</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">16</h3>
-                            <div class="section-calendar__note">
-                                <a href="#">
-                                    <div class="section-calendar__note note note--grey">
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">11</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">12</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">13</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">14</h3>
+                                <ul class="note note-multiply">
+                                    <li class="note-multiply__item">
                                         <span class="note__name">
-                                            Available
+                                            Bi-2
                                         </span>
+                                        <span class="note-multiply__separator"></span>
                                         <span class="note__time">
-                                            8:00 pm – 11:00 pm
+                                            9:00 pm
                                         </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">17</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">18</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">19</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">20</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">21</h3>
-                            <div class="section-calendar__note">
-                                <a href="#">
-                                    <div class="section-calendar__note note note--grey">
+                                    </li>
+                                    <li class="note-multiply__item">
                                         <span class="note__name">
-                                            Available
+                                            Staind
                                         </span>
+                                        <span class="note-multiply__separator"></span>
                                         <span class="note__time">
-                                            8:00 pm – 11:00 pm
+                                            11:00 pm
                                         </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">22</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">23</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">24</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">25</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">26</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">27</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">28</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">29</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">30</h3>
-                            <div class="section-calendar__note">
-                                <a href="#">
-                                    <div class="section-calendar__note note note--grey">
-                                        <span class="note__name">
-                                            Available
-                                        </span>
-                                        <span class="note__time">
-                                            8:00 pm – 11:00 pm
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">1</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">2</h3><div class="section-calendar__note"></div></li>
-                        <li class="section-calendar__days-item"><h3 class="heading-3--medium">3</h3><div class="section-calendar__note"></div></li>
-                    </ul>
-                </section>
-            </main>
-        </div>
-    
-        
-    </div>
-    <div class="overlay overlay-grey">
-        <div class="overlay__content-container">
-            <div class="auth-page__close-btn-wrapper">
-                <button type="button" class="close-btn">
-                    <svg class="close-btn__icon">
-                        <use href="img/sprite.svg#icon-Close"></use>
-                    </svg>
-                </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">15</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">16</h3>
+                                <div class="section-calendar__note">
+                                    <a href="#">
+                                        <div class="section-calendar__note note note--grey">
+                                            <span class="note__name">
+                                                Available
+                                            </span>
+                                            <span class="note__time">
+                                                8:00 pm – 11:00 pm
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">17</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">18</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">19</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">20</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">21</h3>
+                                <div class="section-calendar__note">
+                                    <a href="#">
+                                        <div class="section-calendar__note note note--grey">
+                                            <span class="note__name">
+                                                Available
+                                            </span>
+                                            <span class="note__time">
+                                                8:00 pm – 11:00 pm
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">22</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">23</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">24</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">25</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">26</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">27</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">28</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">29</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">30</h3>
+                                <div class="section-calendar__note">
+                                    <a href="#">
+                                        <div class="section-calendar__note note note--grey">
+                                            <span class="note__name">
+                                                Available
+                                            </span>
+                                            <span class="note__time">
+                                                8:00 pm – 11:00 pm
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">1</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">2</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                            <li class="section-calendar__days-item">
+                                <h3 class="heading-3--medium">3</h3>
+                                <div class="section-calendar__note"></div>
+                            </li>
+                        </ul>
+                    </section>
+                </main>
             </div>
-            <div class="calendar-page__modal-window">
-                <h1 class="heading-1 calendar-page__modal-window-heading">Book a gig</h1>
-                <form class="book-form">
-                    <ul class="book-form__inputs-list">
-                        <li class="book-form__inputs-item">
-                            <label class="book-form__input-label">
-                                Band
-                                <input class="book-form__input" type="text" placeholder="Nirvana">
-                            </label>
-                            <span class="book-form__price-mark">$100.00/hour</span>
-                        </li>
-                        <li class="book-form__inputs-item">
-                            <label class="book-form__input-label">
-                                Date
-                                <input class="book-form__input" type="text" placeholder="Thusday, June 16">
-                            </label>
-                            <svg class="book-form__input-icon">
-                                <use href="img/sprite.svg#icon-Calendar"></use>
-                            </svg>
-                        </li>
-                        <li class="book-form__inputs-item">
-                            <ul class="book-form__time-set">
-                                
+        </div>
+        <div class="overlay overlay-grey">
+            <div class="overlay__content-container">
+                <div class="auth-page__close-btn-wrapper">
+                    <button type="button" class="close-btn">
+                        <svg class="close-btn__icon">
+                            <use href="img/sprite.svg#icon-Close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="calendar-page__modal-window">
+                    <p class="heading-1 calendar-page__modal-window-heading">Book a gig</p>
+                    <form class="book-form">
+                        <ul class="book-form__inputs-list">
+                            <li class="book-form__inputs-item">
+                                <label class="book-form__input-label">
+                                    Band
+                                    <input class="book-form__input" type="text" placeholder="Nirvana">
+                                </label>
+                                <span class="book-form__price-mark">$100.00/hour</span>
+                            </li>
+                            <li class="book-form__inputs-item">
+                                <label class="book-form__input-label">
+                                    Date
+                                    <input class="book-form__input" type="text" placeholder="Thusday, June 16">
+                                </label>
+                                <svg class="book-form__input-icon">
+                                    <use href="img/sprite.svg#icon-Calendar"></use>
+                                </svg>
+                            </li>
+                            <li class="book-form__inputs-item">
+                                <ul class="book-form__time-set">
                                     <li class="book-form__time-set-item">
                                         <div class="custom-select"> 
-                                            <p class="custom-select__current-text"><span class="custom-select__current-value">8</span>:00 pm</p>
+                                            <p class="custom-select__current-text">
+                                                <span class="custom-select__current-value">8</span>:00 pm
+                                            </p>
                                             <button type="button" class="custom-select__button">
                                                 <svg class="custom-select__button-icon">
                                                     <use href="img/sprite.svg#icon-Chevron-Down"></use>
@@ -306,14 +381,14 @@
                                             </ul>
                                         </div>
                                     </li>
-
                                     <li class="book-form__time-set-item">
                                         <span class="book-form__time-set-separator">-</span>
                                     </li>
-                                
                                     <li class="book-form__time-set-item">
                                         <div class="custom-select"> 
-                                            <p class="custom-select__current-text"><span class="custom-select__current-value">8</span>:00 pm</p>
+                                            <p class="custom-select__current-text">
+                                                <span class="custom-select__current-value">8</span>:00 pm
+                                            </p>
                                             <button type="button" class="custom-select__button">
                                                 <svg class="custom-select__button-icon">
                                                     <use href="img/sprite.svg#icon-Chevron-Down"></use>
@@ -327,31 +402,27 @@
                                             </ul>
                                         </div>
                                     </li>
-                                
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="book-form__total-price margin-bottom-largest">
-                        <span class="book-form__total-price-title">Price</span>
-                        <span class="book-form__total-price-value">$200.00</span>
-                    </div>
-
-                    <div class="book-form__button-set">
-                        <a href="messages.html" class="button-large button-large--primary">Send request</a>
-                        <button type="button" class="link book-form__button-set-link">Cancel</button>
-                    </div>
-                </form>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="book-form__total-price margin-bottom-largest">
+                            <span class="book-form__total-price-title">Price</span>
+                            <span class="book-form__total-price-value">$200.00</span>
+                        </div>
+                        <div class="book-form__button-set">
+                            <a href="messages.html" class="button-large button-large--primary">Send request</a>
+                            <button type="button" class="link book-form__button-set-link">Cancel</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            
         </div>
-    </div>
     <script src="./js/custom-select.js"></script>
     <script src="./js/overlay-close.js"></script>
     <script>
         const calendarItemSet = document.querySelectorAll('.section-calendar__days-item');
         const overlayEl = document.querySelector('.overlay');
         const formCloseBtn = document.querySelector('.book-form__button-set-link');
-
         calendarItemSet.forEach(item => {
             item.addEventListener('click', ()=> {
                 overlayEl.classList.add('active');
@@ -361,6 +432,5 @@
             overlayEl.classList.remove('active');
         })
     </script>
-
-</body>
+    </body>
 </html>

@@ -1,462 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Gigit | on your own</title>
-</head>
-<body>
-    <div class="layout-container">
-        <aside class="sidebar">
-
-            <a href="browse.html" class="sidebar__button-home button-round">g</a>
-    
-    
-            <nav class="sidebar__navigation">
-    
-                
-    
-                <ul class="sidebar__navigation-list">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Gigit | on your own</title>
+    </head>
+    <body>
+        <div class="layout-container">
+            <aside class="sidebar">
+                <a href="browse.html" class="sidebar__button-home button-round">g</a>
+                <nav class="sidebar__navigation">
+                    <ul class="sidebar__navigation-list">
+                        <li class="sidebar__navigation-item">
+                            <a href="calendar.html" class="sidebar__link button-round">
+                                <svg class="sidebar__navigation-icon">
+                                    <use href="img/sprite.svg#icon-Calendar"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__navigation-item">
+                            <a href="browse.html" class="sidebar__link sidebar__link--active button-round">
+                                <svg class="sidebar__navigation-icon">
+                                    <use href="img/sprite.svg#icon-Music"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__navigation-item">
+                            <a href="#" class="sidebar__link button-round">
+                                <svg class="sidebar__navigation-icon">
+                                    <use href="img/sprite.svg#icon-Favorites-Default"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__navigation-item red-mark-after">
+                            <a href="messages.html" class="sidebar__link button-round">
+                                <svg class="sidebar__navigation-icon">
+                                    <use href="img/sprite.svg#icon-Messages"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__navigation-item">
+                            <a href="#" class="sidebar__link button-round">
+                                <svg class="sidebar__navigation-icon">
+                                    <use href="img/sprite.svg#icon-File-Invoice"></use>
+                                </svg>
+                            </a>
+                        </li>
                     
-                    <li class="sidebar__navigation-item">
-                        <a href="calendar.html" class="sidebar__link button-round">
-                            <svg class="sidebar__navigation-icon">
-                                <use href="img/sprite.svg#icon-Calendar"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="sidebar__navigation-item">
-                        <a href="browse.html" class="sidebar__link sidebar__link--active button-round">
-                            <svg class="sidebar__navigation-icon">
-                                <use href="img/sprite.svg#icon-Music"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="sidebar__navigation-item">
-                        <a href="#" class="sidebar__link button-round">
-                            <svg class="sidebar__navigation-icon">
-                                <use href="img/sprite.svg#icon-Favorites-Default"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="sidebar__navigation-item red-mark-after">
-                        <a href="messages.html" class="sidebar__link button-round">
-                            <svg class="sidebar__navigation-icon">
-                                <use href="img/sprite.svg#icon-Messages"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="sidebar__navigation-item">
-                        <a href="#" class="sidebar__link button-round">
-                            <svg class="sidebar__navigation-icon">
-                                <use href="img/sprite.svg#icon-File-Invoice"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </nav>
-    
-            <div class="sidebar__menu">
-                <ul class="sidebar__menu-list">
-                    <li class="sidebar__menu-item">
-                        <button type="button" class="sidebar__link button-round">
-                            <svg class="sidebar__menu-icon">
-                                <use href="img/sprite.svg#icon-Bell"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="sidebar__menu-item">
-                        <button type="button" class="sidebar__link button-round">
-                            <svg class="sidebar__menu-icon">
-                                <use href="img/sprite.svg#icon-User"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="sidebar__menu-item">
-                        <button type="button" class="sidebar__link button-round">
-                            <svg class="sidebar__menu-icon">
-                                <use href="img/sprite.svg#icon-Arrow-Bar-Right"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-    
-        
-    
-        <div class="fav-item-page__container">
-            <header class="header fav-item-header">
-                <div class="fav-item-header__btn-wrapper">
-                    <input type="checkbox" class="fav-item-header__checkbox" id="header-fav-star">
-                    <label for="header-fav-star" class="fav-item-header__button">
-                        <svg class="fav-item-header__icon">
-                            <use href="img/sprite.svg#icon-Star"></use>
-                        </svg>
-                        <svg class="fav-item-header__icon--selected">
-                            <use href="img/sprite.svg#icon-Favorites-Selected"></use>
-                        </svg>
-                    </label>
+                    </ul>
+                </nav>
+                <div class="sidebar__menu">
+                    <ul class="sidebar__menu-list">
+                        <li class="sidebar__menu-item">
+                            <button type="button" class="sidebar__link button-round">
+                                <svg class="sidebar__menu-icon">
+                                    <use href="img/sprite.svg#icon-Bell"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <button type="button" class="sidebar__link button-round">
+                                <svg class="sidebar__menu-icon">
+                                    <use href="img/sprite.svg#icon-User"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <button type="button" class="sidebar__link button-round">
+                                <svg class="sidebar__menu-icon">
+                                    <use href="img/sprite.svg#icon-Arrow-Bar-Right"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
-                <h1 class="heading-1">Nirvana</h1>
-          
-            </header>
-
-            <main>
-
-                <div class="fav-item-hero">    
-                </div>
-
-                <div class="flex-container">
-                    <section class="fav-item-about">
-                        <h2 class="heading-2">About</h2>
-                        <p class="fav-item-about__text">
-                            Nirvana is one of the best-selling bands of all time, having sold more than 75 million records worldwide. During their three years as a mainstream act, Nirvana received an American Music Award, Brit Award and Grammy Award, as well as seven MTV Video Music Awards and two NME Awards.
-                        </p>
-                        <nav class="fav-item-about__navigation">
-                            <ul class="fav-item-about__btn-list">
-                                <li>
-                                    <a href="#" class="button-large button-large--primary">Book a Gig</a>
+            </aside>
+            <div class="fav-item-page__container">
+                <header class="header fav-item-header">
+                    <div class="fav-item-header__btn-wrapper">
+                        <input type="checkbox" class="fav-item-header__checkbox" id="header-fav-star">
+                        <label for="header-fav-star" class="fav-item-header__button">
+                            <svg class="fav-item-header__icon">
+                                <use href="img/sprite.svg#icon-Star"></use>
+                            </svg>
+                            <svg class="fav-item-header__icon--selected">
+                                <use href="img/sprite.svg#icon-Favorites-Selected"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <h1 class="heading-1">Nirvana</h1>
+                </header>
+                <main>
+                    <div class="fav-item-hero">    
+                    </div>
+                    <div class="flex-container">
+                        <section class="fav-item-about">
+                            <h2 class="heading-2">About</h2>
+                            <p class="fav-item-about__text">
+                                Nirvana is one of the best-selling bands of all time, having sold more than 75 million records worldwide. During their three years as a mainstream act, Nirvana received an American Music Award, Brit Award and Grammy Award, as well as seven MTV Video Music Awards and two NME Awards.
+                            </p>
+                            <nav class="fav-item-about__navigation">
+                                <ul class="fav-item-about__btn-list">
+                                    <li>
+                                        <a href="#" class="button-large button-large--primary">Book a Gig</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="button-large button-large--secondary">Watch preview</a>
+                                    </li>
+                                </ul>
+                                <ul class="fav-item-about__links-list">
+                                    <li>
+                                        <a href="#" class="fav-item-about__link">
+                                            <svg class="fav-item-about__link-icon">
+                                                <use href="img/sprite.svg#icon-Brand-Facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fav-item-about__link">
+                                            <svg class="fav-item-about__link-icon">
+                                                <use href="img/sprite.svg#icon-Brand-Instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fav-item-about__link">
+                                            <svg class="fav-item-about__link-icon">
+                                                <use href="img/sprite.svg#icon-Brand-Youtube"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fav-item-about__link">
+                                            <svg class="fav-item-about__link-icon">
+                                                <use href="img/sprite.svg#icon-Brand-Spotify"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fav-item-about__link">
+                                            <svg class="fav-item-about__link-icon">
+                                                <use href="img/sprite.svg#icon-Brand-Soundcloud"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <h2 class="heading-2">Muso Details</h2>
+                            <ul class="fav-item-about__details-list">
+                                <li class="fav-item-about__details-item">
+                                    <span class="fav-item-about__details-title">Contact Name</span>
+                                    <span class="fav-item-about__details-value">Kurt Cobain</span>
                                 </li>
-                                <li>
-                                    <a href="#" class="button-large button-large--secondary">Watch preview</a>
+                                <li class="fav-item-about__details-item">
+                                    <span class="fav-item-about__details-title">Gig Price (per hour)</span>
+                                    <span class="fav-item-about__details-value">$50-150</span>
+                                </li>
+                                <li class="fav-item-about__details-item">
+                                    <span class="fav-item-about__details-title">ABN</span>
+                                    <span class="fav-item-about__details-value">34 190 897 963</span>
+                                </li>
+                                <li class="fav-item-about__details-item">
+                                    <span class="fav-item-about__details-title">Bank Details</span>
+                                    <span class="fav-item-about__details-value">40802840710000021339</span>
                                 </li>
                             </ul>
-                            <ul class="fav-item-about__links-list">
-                                <li>
-                                    <a href="#" class="fav-item-about__link">
-                                        <svg class="fav-item-about__link-icon">
-                                            <use href="img/sprite.svg#icon-Brand-Facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fav-item-about__link">
-                                        <svg class="fav-item-about__link-icon">
-                                            <use href="img/sprite.svg#icon-Brand-Instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fav-item-about__link">
-                                        <svg class="fav-item-about__link-icon">
-                                            <use href="img/sprite.svg#icon-Brand-Youtube"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fav-item-about__link">
-                                        <svg class="fav-item-about__link-icon">
-                                            <use href="img/sprite.svg#icon-Brand-Spotify"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fav-item-about__link">
-                                        <svg class="fav-item-about__link-icon">
-                                            <use href="img/sprite.svg#icon-Brand-Soundcloud"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-    
-                        <h2 class="heading-2">Muso Details</h2>
-    
-                        <ul class="fav-item-about__details-list">
-                            <li class="fav-item-about__details-item">
-                                <span class="fav-item-about__details-title">Contact Name</span>
-                                <span class="fav-item-about__details-value">Kurt Cobain</span>
-                            </li>
-                            <li class="fav-item-about__details-item">
-                                <span class="fav-item-about__details-title">Gig Price (per hour)</span>
-                                <span class="fav-item-about__details-value">$50-150</span>
-                            </li>
-                            <li class="fav-item-about__details-item">
-                                <span class="fav-item-about__details-title">ABN</span>
-                                <span class="fav-item-about__details-value">34 190 897 963</span>
-                            </li>
-                            <li class="fav-item-about__details-item">
-                                <span class="fav-item-about__details-title">Bank Details</span>
-                                <span class="fav-item-about__details-value">40802840710000021339</span>
-                            </li>
-                        </ul>
-                    </section>
-    
-                    <section class="gallery">
-                        <h2 class="heading-2">Gallery</h2>
-                        <div class="gallery__title">
-                            <div class="gallery__title-img-wrapper">
-                              
+                        </section>
+                        <section class="gallery">
+                            <h2 class="heading-2">Gallery</h2>
+                            <div class="gallery__title">
+                                <div class="gallery__title-img-wrapper">
                                     <img 
                                         src="img/artist-page/gallery-logo/fav-item-logo-x3-min.jpg" 
                                         alt="artist logo 1" 
                                         class="gallery__img"
                                     >
-    
+                                </div>
+                                <p class="gallery__title-text">nirvana_official</p>
+                                <svg class="gallery__title-icon">
+                                    <use href="img/sprite.svg#icon-icon-official"></use>
+                                </svg>
                             </div>
-                            <p class="gallery__title-text">nirvana_official</p>
-                            <svg class="gallery__title-icon">
-                                <use href="img/sprite.svg#icon-icon-official"></use>
-                            </svg>
-                        </div>
-                        <ul class="gallery__list">
-                            <li class="gallery__item">
-                                <picture>
-                                    
-                                    <source
-                                        srcset="
+                            <ul class="gallery__list">
+                                <li class="gallery__item">
+                                    <picture>
+                                        <source
+                                            srcset="
                                             img/artist-page/gallery-webp/gallery-img-1-x1.webp 119w,
                                             img/artist-page/gallery-webp/gallery-img-1-x2.webp 238w,
                                             img/artist-page/gallery-webp/gallery-img-1-x3.webp 357w
                                         "
-                                        type="image/webp"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    <img 
-                                        srcset="
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                        <img 
+                                            srcset="
                                             img/artist-page/gallery-jpeg/gallery-img-1-x1.jpeg 119w,
                                             img/artist-page/gallery-jpeg/gallery-img-1-x2.jpeg 238w,
                                             img/artist-page/gallery-jpeg/gallery-img-1-x3.jpeg 357w
-                                        "
-                                        
-                                        src="img/artist-page/gallery-jpeg/gallery-img-1-x1-min.jpg" 
-                                        alt="artist gallary photo 1" 
-                                        class="gallery__img"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    
-                                </picture>
-                            </li>
-                            <li class="gallery__item">
-                                <picture>
-                                    
-                                    <source
-                                        srcset="
+                                        "                                        
+                                            src="img/artist-page/gallery-jpeg/gallery-img-1-x1-min.jpg" 
+                                            alt="artist gallary photo 1" 
+                                            class="gallery__img"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                    </picture>
+                                </li>
+                                <li class="gallery__item">
+                                    <picture>
+                                        <source
+                                            srcset="
                                             img/artist-page/gallery-webp/gallery-img-2-x1.webp 119w,
                                             img/artist-page/gallery-webp/gallery-img-2-x2.webp 238w,
                                             img/artist-page/gallery-webp/gallery-img-2-x3.webp 357w
                                         "
-                                        type="image/webp"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    <img 
-                                        srcset="
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                        <img 
+                                            srcset="
                                             img/artist-page/gallery-jpeg/gallery-img-2-x1.jpeg 119w,
                                             img/artist-page/gallery-jpeg/gallery-img-2-x2.jpeg 238w,
                                             img/artist-page/gallery-jpeg/gallery-img-2-x3.jpeg 357w
-                                        "
-                                        
-                                        src="img/artist-page/gallery-jpeg/gallery-img-2-x1-min.jpg" 
-                                        alt="artist gallary photo 2" 
-                                        class="gallery__img"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    
-                                </picture>
-                            </li>
-                            <li class="gallery__item">
-                                <picture>
-                                    
-                                    <source
-                                        srcset="
+                                        "                                        
+                                            src="img/artist-page/gallery-jpeg/gallery-img-2-x1-min.jpg" 
+                                            alt="artist gallary photo 2" 
+                                            class="gallery__img"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                    </picture>
+                                </li>
+                                <li class="gallery__item">
+                                    <picture>
+                                        <source
+                                            srcset="
                                             img/artist-page/gallery-webp/gallery-img-3-x1.webp 119w,
                                             img/artist-page/gallery-webp/gallery-img-3-x2.webp 238w,
                                             img/artist-page/gallery-webp/gallery-img-3-x3.webp 357w
                                         "
-                                        type="image/webp"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    <img 
-                                        srcset="
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                        <img 
+                                            srcset="
                                             img/artist-page/gallery-jpeg/gallery-img-3-x1.jpeg 119w,
                                             img/artist-page/gallery-jpeg/gallery-img-3-x2.jpeg 238w,
                                             img/artist-page/gallery-jpeg/gallery-img-3-x3.jpeg 357w
-                                        "
-                                        
-                                        src="img/artist-page/gallery-jpeg/gallery-img-3-x1-min.jpg" 
-                                        alt="artist gallary photo 3" 
-                                        class="gallery__img"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    
-                                </picture>
-                            </li>
-                            <li class="gallery__item">
-                                <picture>
-                                    
-                                    <source
-                                        srcset="
+                                        "                                        
+                                            src="img/artist-page/gallery-jpeg/gallery-img-3-x1-min.jpg" 
+                                            alt="artist gallary photo 3" 
+                                            class="gallery__img"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >                                    
+                                    </picture>
+                                </li>
+                                <li class="gallery__item">
+                                    <picture>                                    
+                                        <source
+                                            srcset="
                                             img/artist-page/gallery-webp/gallery-img-4-x1.webp 119w,
                                             img/artist-page/gallery-webp/gallery-img-4-x2.webp 238w,
                                             img/artist-page/gallery-webp/gallery-img-4-x3.webp 357w
                                         "
-                                        type="image/webp"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    <img 
-                                        srcset="
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                        <img 
+                                            srcset="
                                             img/artist-page/gallery-jpeg/gallery-img-4-x1.jpeg 119w,
                                             img/artist-page/gallery-jpeg/gallery-img-4-x2.jpeg 238w,
                                             img/artist-page/gallery-jpeg/gallery-img-4-x3.jpeg 357w
-                                        "
-                                        
-                                        src="img/artist-page/gallery-jpeg/gallery-img-4-x1-min.jpg" 
-                                        alt="artist gallary photo 4" 
-                                        class="gallery__img"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                   
-                                </picture>
-                            </li>
-                            <li class="gallery__item">
-                                <picture>
-                                    
-                                    <source
-                                        srcset="
+                                        "                                        
+                                            src="img/artist-page/gallery-jpeg/gallery-img-4-x1-min.jpg" 
+                                            alt="artist gallary photo 4" 
+                                            class="gallery__img"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >                                   
+                                    </picture>
+                                </li>
+                                <li class="gallery__item">
+                                    <picture>                                    
+                                        <source
+                                            srcset="
                                             img/artist-page/gallery-webp/gallery-img-5-x1.webp 119w,
                                             img/artist-page/gallery-webp/gallery-img-5-x2.webp 238w,
                                             img/artist-page/gallery-webp/gallery-img-5-x3.webp 357w
                                         "
-                                        type="image/webp"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    <img 
-                                        srcset="
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                        <img 
+                                            srcset="
                                             img/artist-page/gallery-jpeg/gallery-img-5-x1.jpeg 119w,
                                             img/artist-page/gallery-jpeg/gallery-img-5-x2.jpeg 238w,
                                             img/artist-page/gallery-jpeg/gallery-img-5-x3.jpeg 357w
-                                        "
-                                        
-                                        src="img/artist-page/gallery-jpeg/gallery-img-5-x1-min.jpg" 
-                                        alt="artist gallary photo 5" 
-                                        class="gallery__img"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    
-                                </picture>
-                            </li>
-                            <li class="gallery__item">
-                                <picture>
-                                    
-                                    <source
-                                        srcset="
+                                        "                                        
+                                            src="img/artist-page/gallery-jpeg/gallery-img-5-x1-min.jpg" 
+                                            alt="artist gallary photo 5" 
+                                            class="gallery__img"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >                                    
+                                    </picture>
+                                </li>
+                                <li class="gallery__item">
+                                    <picture>                                    
+                                        <source
+                                            srcset="
                                             img/artist-page/gallery-webp/gallery-img-6-x1.webp 119w,
                                             img/artist-page/gallery-webp/gallery-img-6-x2.webp 238w,
                                             img/artist-page/gallery-webp/gallery-img-6-x3.webp 357w
                                         "
-                                        type="image/webp"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    <img 
-                                        srcset="
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                        <img 
+                                            srcset="
                                             img/artist-page/gallery-jpeg/gallery-img-6-x1.jpeg 119w,
                                             img/artist-page/gallery-jpeg/gallery-img-6-x2.jpeg 238w,
                                             img/artist-page/gallery-jpeg/gallery-img-6-x3.jpeg 357w
-                                        "
-                                        
-                                        src="img/artist-page/gallery-jpeg/gallery-img-6-x1-min.jpg" 
-                                        alt="artist gallary photo 6" 
-                                        class="gallery__img"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    
-                                </picture>
-                            </li>
-                            <li class="gallery__item">
-                                <picture>
-                                    
-                                    <source
-                                        srcset="
+                                        "                                        
+                                            src="img/artist-page/gallery-jpeg/gallery-img-6-x1-min.jpg" 
+                                            alt="artist gallary photo 6" 
+                                            class="gallery__img"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >                                    
+                                    </picture>
+                                </li>
+                                <li class="gallery__item">
+                                    <picture>                                    
+                                        <source
+                                            srcset="
                                             img/artist-page/gallery-webp/gallery-img-7-x1.webp 119w,
                                             img/artist-page/gallery-webp/gallery-img-7-x2.webp 238w,
                                             img/artist-page/gallery-webp/gallery-img-7-x3.webp 357w
                                         "
-                                        type="image/webp"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    <img 
-                                        srcset="
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                        <img 
+                                            srcset="
                                             img/artist-page/gallery-jpeg/gallery-img-7-x1.jpeg 119w,
                                             img/artist-page/gallery-jpeg/gallery-img-7-x2.jpeg 238w,
                                             img/artist-page/gallery-jpeg/gallery-img-7-x3.jpeg 357w
-                                        "
-                                        
-                                        src="img/artist-page/gallery-jpeg/gallery-img-7-x1-min.jpg" 
-                                        alt="artist gallary photo 7" 
-                                        class="gallery__img"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    
-                                </picture>
-                            </li>
-                            <li class="gallery__item">
-                                <picture>
-                                    
-                                    <source
-                                        srcset="
+                                        "                                        
+                                            src="img/artist-page/gallery-jpeg/gallery-img-7-x1-min.jpg" 
+                                            alt="artist gallary photo 7" 
+                                            class="gallery__img"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >                                    
+                                    </picture>
+                                </li>
+                                <li class="gallery__item">
+                                    <picture>                                    
+                                        <source
+                                            srcset="
                                             img/artist-page/gallery-webp/gallery-img-8-x1.webp 119w,
                                             img/artist-page/gallery-webp/gallery-img-8-x2.webp 238w,
                                             img/artist-page/gallery-webp/gallery-img-8-x3.webp 357w
                                         "
-                                        type="image/webp"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    <img 
-                                        srcset="
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                        <img 
+                                            srcset="
                                             img/artist-page/gallery-jpeg/gallery-img-8-x1.jpeg 119w,
                                             img/artist-page/gallery-jpeg/gallery-img-8-x2.jpeg 238w,
                                             img/artist-page/gallery-jpeg/gallery-img-8-x3.jpeg 357w
-                                        "
-                                        
-                                        src="img/artist-page/gallery-jpeg/gallery-img-8-x1-min.jpg" 
-                                        alt="artist gallary photo 8" 
-                                        class="gallery__img"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    
-                                </picture>
-                            </li>
-                            <li class="gallery__item">
-                                <picture>
-                                    
-                                    <source
-                                        srcset="
+                                        "                                        
+                                            src="img/artist-page/gallery-jpeg/gallery-img-8-x1-min.jpg" 
+                                            alt="artist gallary photo 8" 
+                                            class="gallery__img"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >                                    
+                                    </picture>
+                                </li>
+                                <li class="gallery__item">
+                                    <picture>                                    
+                                        <source
+                                            srcset="
                                             img/artist-page/gallery-webp/gallery-img-9-x1.webp 119w,
                                             img/artist-page/gallery-webp/gallery-img-9-x2.webp 238w,
                                             img/artist-page/gallery-webp/gallery-img-9-x3.webp 357w
                                         "
-                                        type="image/webp"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                    <img 
-                                        srcset="
+                                            type="image/webp"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >
+                                        <img 
+                                            srcset="
                                             img/artist-page/gallery-jpeg/gallery-img-9-x1.jpeg 119w,
                                             img/artist-page/gallery-jpeg/gallery-img-9-x2.jpeg 238w,
                                             img/artist-page/gallery-jpeg/gallery-img-9-x3.jpeg 357w
-                                        "
-                                        
-                                        src="img/artist-page/gallery-jpeg/gallery-img-9-x1-min.jpg" 
-                                        alt="artist gallary photo 9" 
-                                        class="gallery__img"
-                                        sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
-                                    >
-                                   
-                                </picture>
-                            </li>
-                        </ul>
-    
-                    </section>
-                </div>
-                
-            </main>
+                                        "                                        
+                                            src="img/artist-page/gallery-jpeg/gallery-img-9-x1-min.jpg" 
+                                            alt="artist gallary photo 9" 
+                                            class="gallery__img"
+                                            sizes="(min-width: 1440px) 119px, (min-width: 280px) 250px"
+                                        >                                   
+                                    </picture>
+                                </li>
+                            </ul>    
+                        </section>
+                    </div>                
+                </main>
+            </div>            
         </div>
-    
-        
-    </div>
-</body>
+    </body>
 </html>

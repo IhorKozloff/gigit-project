@@ -25,4 +25,10 @@
         top: 3.2rem;
         right: 3.2rem;
     }
+    &__tooltip {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: $color-grey-2;
+    }
 }
